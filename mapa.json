@@ -93,7 +93,7 @@
     {
      "g": true,
      "p": "PROGRESO_entrada_experimento1b_linea_parte",
-     "d": "Registro de la línea de producción del experimento 1B (partes 1 a 4z4).",
+     "d": "Registro de la línea de producción del experimento 1B (partes 1 a 4z6).",
      "s": [
       "1",
       "2",
@@ -127,7 +127,9 @@
       "4z",
       "4z2",
       "4z3",
-      "4z4"
+      "4z4",
+      "4z5",
+      "4z6"
      ],
      "sd": [
       "Implementación inicial de la línea web y sus pasos 0 a 2.",
@@ -162,7 +164,9 @@
       "Diseño del prompt para generar poses de animación para el combate en grilla.",
       "Registro de la hoja de poses aprobada del mecha lobo y del prompt de pose única.",
       "Variante ajustada del prompt para generar hojas de poses.",
-      "Primera tanda para retirar el prompt de silueta e incorporar separación y recorte."
+      "Primera tanda para retirar el prompt de silueta e incorporar separación y recorte.",
+      "Segunda tanda: paso del navegador que separa las seis piezas de la hoja con fondo transparente.",
+      "Tercera tanda: pasos de navegador para recortar el mecha ensamblado y las poses, y módulo común de recorte."
      ]
     },
     {
@@ -1185,13 +1189,37 @@
          "n": "main.js",
          "dir": false,
          "c": [],
-         "d": "Lógica principal de la interfaz y del flujo de trabajo."
+         "d": "Arma la página: panel de prompts con los pasos de separar y recortar intercalados."
+        },
+        {
+         "n": "panel-recorte.js",
+         "dir": false,
+         "c": [],
+         "d": "Panel común de los pasos de recorte: elegir una imagen, recortar N sprites con fondo transparente y descargarlos."
         },
         {
          "n": "prompts.js",
          "dir": false,
          "c": [],
          "d": "Carga y composición de las plantillas de prompts."
+        },
+        {
+         "n": "recortar.js",
+         "dir": false,
+         "c": [],
+         "d": "Pasos que recortan el mecha ensamblado (reposo) y la hoja de poses (carga, golpe, guardia, daño, derrotado)."
+        },
+        {
+         "n": "recorte.js",
+         "dir": false,
+         "c": [],
+         "d": "Copia del recorte de fondo gris de demo-combate; devuelve cada pieza como imagen con transparencia."
+        },
+        {
+         "n": "separar.js",
+         "dir": false,
+         "c": [],
+         "d": "Paso que separa las seis piezas de la hoja (usa el panel común de recorte)."
         },
         {
          "n": "visor.js",
@@ -1234,12 +1262,6 @@
          "dir": false,
          "c": [],
          "d": "Variante de la plantilla de poses con restricciones de encuadre y consistencia."
-        },
-        {
-         "n": "prompt_silueta.txt",
-         "dir": false,
-         "c": [],
-         "d": "Plantilla experimental para generar una silueta guía."
         }
        ]
       },
@@ -1256,7 +1278,7 @@
        "d": "Instrucciones y flujo de la herramienta web experimental de prompts."
       }
      ],
-     "d": "Web que ayuda a armar los prompts de la línea de producción de mechas (experimento 1B)."
+     "d": "Web que arma los prompts de la línea de producción de mechas y recorta piezas, mecha y poses en el navegador (experimento 1B)."
     },
     {
      "n": "tools.zip",
