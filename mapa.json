@@ -1,0 +1,413 @@
+{
+ "n": "rivellon-arena",
+ "dir": true,
+ "c": [
+  {
+   "n": ".gitignore",
+   "dir": false,
+   "c": [],
+   "d": "Archivos y carpetas que Git ignora."
+  },
+  {
+   "n": "README.md",
+   "dir": false,
+   "c": [],
+   "d": "Presentación general del proyecto."
+  },
+  {
+   "n": "package.json",
+   "dir": false,
+   "c": [],
+   "d": "Manifiesto npm de la raíz."
+  },
+  {
+   "n": "package-lock.json",
+   "dir": false,
+   "c": [],
+   "d": "Versiones exactas de las dependencias."
+  },
+  {
+   "n": "docs.zip",
+   "dir": false,
+   "c": [],
+   "d": "Copia comprimida de docs/.",
+   "i": true
+  },
+  {
+   "n": "PROGRESO_entrada_experimento1b_linea_parte4i.md",
+   "dir": false,
+   "c": [],
+   "d": "Entrada de progreso suelta en la raíz; también existe en docs/.",
+   "i": true
+  },
+  {
+   "n": "docs",
+   "dir": true,
+   "c": [
+    {
+     "n": "CLAUDE.md",
+     "dir": false,
+     "c": [],
+     "d": "Instrucciones y contexto del proyecto para Claude.",
+     "i": true
+    },
+    {
+     "n": "PROGRESO.md",
+     "dir": false,
+     "c": [],
+     "d": "Registro general de progreso.",
+     "i": true
+    },
+    {
+     "g": true,
+     "p": "PROGRESO_entrada_experimento1b_",
+     "s": [
+      "demo_combate",
+      "dr_mecha2a4",
+      "dr_mecha4_sexta",
+      "ia",
+      "mecha2",
+      "mecha2b",
+      "mecha3a5",
+      "planilla",
+      "planilla_v2",
+      "prompts_entrada",
+      "recorte",
+      "tecnicaC",
+      "verificar_piezas"
+     ],
+     "d": "Entradas del registro de progreso sobre otros frentes del experimento 1b (mechas, planilla, IA, demo de combate, técnica C…).",
+     "i": true
+    },
+    {
+     "g": true,
+     "p": "PROGRESO_entrada_experimento1b_linea_parte",
+     "s": [
+      "1",
+      "2",
+      "3a",
+      "3b",
+      "3c",
+      "4a",
+      "4b",
+      "4c",
+      "4d",
+      "4e",
+      "4f",
+      "4g",
+      "4h",
+      "4i",
+      "4j",
+      "4k",
+      "4l",
+      "4m",
+      "4n",
+      "4o",
+      "4q",
+      "4r",
+      "4s",
+      "4t",
+      "4u",
+      "4v",
+      "4w",
+      "4x",
+      "4y",
+      "4z",
+      "4z2",
+      "4z3",
+      "4z4"
+     ],
+     "d": "Entradas del registro de progreso sobre la línea de producción del experimento 1b, en partes.",
+     "i": true
+    },
+    {
+     "g": true,
+     "p": "PROGRESO_entrada_",
+     "s": [
+      "parte2b",
+      "parte3a",
+      "parte3b1",
+      "parte3b2",
+      "parte3b3",
+      "parte3c",
+      "parte4a",
+      "parte4a2",
+      "parte4a3",
+      "parte4a4",
+      "parte4b",
+      "parte4b2",
+      "parte4b3",
+      "parte4c",
+      "parte4d1",
+      "parte4d2",
+      "parte4d3",
+      "parte4d4",
+      "parte4d5",
+      "parte4e1",
+      "parte4e2",
+      "parte5a",
+      "verificacion1"
+     ],
+     "d": "Entradas del registro de progreso por parte del desarrollo, más una de verificación.",
+     "i": true
+    },
+    {
+     "n": "PROMPT_RETOMAR.md",
+     "dir": false,
+     "c": [],
+     "d": "Prompt para retomar el trabajo en una sesión nueva.",
+     "i": true
+    },
+    {
+     "n": "README.md",
+     "dir": false,
+     "c": [],
+     "d": "Presentación de la documentación.",
+     "i": true
+    },
+    {
+     "n": "documento_conceptual_juego_robots_unificado (1).md",
+     "dir": false,
+     "c": [],
+     "d": "Documento conceptual del juego de robots; el «(1)» sugiere una copia descargada dos veces.",
+     "i": true
+    },
+    {
+     "n": "experimento1b_mecha1.md",
+     "dir": false,
+     "c": [],
+     "d": "Experimento 1b: notas de la mecha 1.",
+     "i": true
+    },
+    {
+     "n": "experimento1b_mecha2.md",
+     "dir": false,
+     "c": [],
+     "d": "Experimento 1b: notas de la mecha 2.",
+     "i": true
+    },
+    {
+     "n": "experimento1b_mecha3a5.md",
+     "dir": false,
+     "c": [],
+     "d": "Experimento 1b: notas de las mechas 3 a 5.",
+     "i": true
+    },
+    {
+     "n": "experimento1b_planilla.xlsx",
+     "dir": false,
+     "c": [],
+     "d": "Experimento 1b: planilla de datos.",
+     "i": true
+    },
+    {
+     "n": "experimento1b_planilla_v2.xlsx",
+     "dir": false,
+     "c": [],
+     "d": "Experimento 1b: planilla de datos, versión 2.",
+     "i": true
+    },
+    {
+     "n": "experimento1b_tecnicaC.md",
+     "dir": false,
+     "c": [],
+     "d": "Experimento 1b: técnica C.",
+     "i": true
+    },
+    {
+     "n": "protocolo_ia_mechas.md",
+     "dir": false,
+     "c": [],
+     "d": "Protocolo para trabajar con IA en las mechas.",
+     "i": true
+    },
+    {
+     "n": "tree.md",
+     "dir": false,
+     "c": [],
+     "d": "Este mismo árbol del proyecto, en texto."
+    }
+   ],
+   "t": true,
+   "d": "Documentación y registro de progreso.",
+   "i": true
+  },
+  {
+   "n": "packages",
+   "dir": true,
+   "c": [
+    {
+     "n": "client",
+     "dir": true,
+     "c": [
+      {
+       "n": "index.html",
+       "dir": false,
+       "c": [],
+       "d": "Página de entrada del cliente."
+      },
+      {
+       "n": "package.json",
+       "dir": false,
+       "c": [],
+       "d": "Manifiesto npm del cliente."
+      },
+      {
+       "n": "src",
+       "dir": true,
+       "c": [],
+       "d": "Código fuente del cliente."
+      },
+      {
+       "n": "tsconfig.json",
+       "dir": false,
+       "c": [],
+       "d": "Configuración de TypeScript del cliente."
+      },
+      {
+       "n": "vite.config.ts",
+       "dir": false,
+       "c": [],
+       "d": "Configuración de Vite (empaquetado del cliente)."
+      }
+     ],
+     "d": "Interfaz web principal del proyecto."
+    },
+    {
+     "n": "engine",
+     "dir": true,
+     "c": [
+      {
+       "n": "package.json",
+       "dir": false,
+       "c": [],
+       "d": "Manifiesto npm del motor."
+      },
+      {
+       "n": "src",
+       "dir": true,
+       "c": [],
+       "d": "Código fuente del motor."
+      },
+      {
+       "n": "test",
+       "dir": true,
+       "c": [],
+       "d": "Pruebas del motor."
+      },
+      {
+       "n": "tsconfig.json",
+       "dir": false,
+       "c": [],
+       "d": "Configuración de TypeScript del motor."
+      }
+     ],
+     "d": "Lógica del motor y pruebas de su comportamiento."
+    }
+   ]
+  },
+  {
+   "n": "root-files-description",
+   "dir": true,
+   "c": [
+    {
+     "n": ".git",
+     "dir": false,
+     "c": [],
+     "d": "Datos internos de Git de ese repositorio."
+    },
+    {
+     "n": "README.md",
+     "dir": false,
+     "c": [],
+     "d": "Presentación de este repositorio."
+    }
+   ],
+   "d": "Repositorio de esta web (mapa del proyecto); tiene su propio .git."
+  },
+  {
+   "n": "tests-e2e",
+   "dir": true,
+   "c": [
+    {
+     "n": "build.mjs",
+     "dir": false,
+     "c": [],
+     "d": "Script que empaqueta el código para las pruebas.",
+     "i": true
+    },
+    {
+     "n": "e2e-pantallas.py",
+     "dir": false,
+     "c": [],
+     "d": "Prueba end-to-end de pantallas.",
+     "i": true
+    },
+    {
+     "n": "e2e.py",
+     "dir": false,
+     "c": [],
+     "d": "Prueba end-to-end de flujo.",
+     "i": true
+    },
+    {
+     "n": "entry.tsx",
+     "dir": false,
+     "c": [],
+     "d": "Punto de entrada del bundle de pruebas.",
+     "i": true
+    },
+    {
+     "n": "linea-produccion.zip",
+     "dir": false,
+     "c": [],
+     "d": "Copia comprimida de tools/linea-produccion.",
+     "i": true
+    },
+    {
+     "n": "stubs",
+     "dir": true,
+     "c": [],
+     "d": "Reemplazos simulados usados en las pruebas.",
+     "i": true
+    }
+   ],
+   "d": "Automatizaciones de verificación visual y de flujo."
+  },
+  {
+   "n": "tools",
+   "dir": true,
+   "c": [
+    {
+     "n": "demo-combate",
+     "dir": true,
+     "c": [],
+     "d": "Demo de combate.",
+     "i": true
+    },
+    {
+     "n": "ensamblado-2d",
+     "dir": true,
+     "c": [],
+     "d": "Herramienta de ensamblado 2D.",
+     "i": true
+    },
+    {
+     "n": "linea-produccion",
+     "dir": true,
+     "c": [],
+     "d": "Herramienta de la línea de producción.",
+     "i": true
+    },
+    {
+     "n": "tools.zip",
+     "dir": false,
+     "c": []
+    }
+   ],
+   "d": "Utilidades y recursos experimentales; no forman parte del núcleo del juego."
+  }
+ ],
+ "t": true,
+ "d": ""
+}

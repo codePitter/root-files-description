@@ -1,0 +1,56 @@
+# rivellon-arena — mapa del proyecto
+Generado: 2026-11-13. `~` = descripción inferida del nombre (por confirmar). Fecha entre paréntesis = última modificación en Git. El tree de origen estaba truncado donde dice «…».
+
+- `rivellon-arena/`
+  - `.gitignore` — Archivos y carpetas que Git ignora.
+  - `README.md` — Presentación general del proyecto.
+  - `package.json` — Manifiesto npm de la raíz.
+  - `package-lock.json` — Versiones exactas de las dependencias.
+  - `docs.zip` — ~Copia comprimida de docs/.
+  - `PROGRESO_entrada_experimento1b_linea_parte4i.md` — ~Entrada de progreso suelta en la raíz; también existe en docs/.
+  - `docs/` — ~Documentación y registro de progreso.
+    - `CLAUDE.md` — ~Instrucciones y contexto del proyecto para Claude.
+    - `PROGRESO.md` — ~Registro general de progreso.
+    - `PROGRESO_entrada_experimento1b_{demo_combate,dr_mecha2a4,dr_mecha4_sexta,ia,mecha2,mecha2b,mecha3a5,planilla,planilla_v2,prompts_entrada,recorte,tecnicaC,verificar_piezas}.md` ×13 — ~Entradas del registro de progreso sobre otros frentes del experimento 1b (mechas, planilla, IA, demo de combate, técnica C…). ()
+    - `PROGRESO_entrada_experimento1b_linea_parte{1,2,3a,3b,3c,4a,4b,4c,4d,4e,4f,4g,4h,4i,4j,4k,4l,4m,4n,4o,4q,4r,4s,4t,4u,4v,4w,4x,4y,4z,4z2,4z3,4z4}.md` ×33 — ~Entradas del registro de progreso sobre la línea de producción del experimento 1b, en partes. ()
+    - `PROGRESO_entrada_{parte2b,parte3a,parte3b1,parte3b2,parte3b3,parte3c,parte4a,parte4a2,parte4a3,parte4a4,parte4b,parte4b2,parte4b3,parte4c,parte4d1,parte4d2,parte4d3,parte4d4,parte4d5,parte4e1,parte4e2,parte5a,verificacion1}.md` ×23 — ~Entradas del registro de progreso por parte del desarrollo, más una de verificación. ()
+    - `PROMPT_RETOMAR.md` — ~Prompt para retomar el trabajo en una sesión nueva.
+    - `README.md` — ~Presentación de la documentación.
+    - `documento_conceptual_juego_robots_unificado (1).md` — ~Documento conceptual del juego de robots; el «(1)» sugiere una copia descargada dos veces.
+    - `experimento1b_mecha1.md` — ~Experimento 1b: notas de la mecha 1.
+    - `experimento1b_mecha2.md` — ~Experimento 1b: notas de la mecha 2.
+    - `experimento1b_mecha3a5.md` — ~Experimento 1b: notas de las mechas 3 a 5.
+    - `experimento1b_planilla.xlsx` — ~Experimento 1b: planilla de datos.
+    - `experimento1b_planilla_v2.xlsx` — ~Experimento 1b: planilla de datos, versión 2.
+    - `experimento1b_tecnicaC.md` — ~Experimento 1b: técnica C.
+    - `protocolo_ia_mechas.md` — ~Protocolo para trabajar con IA en las mechas.
+    - `tree.md` — Este mismo árbol del proyecto, en texto.
+    - … (hay más archivos no listados)
+  - `packages/`
+    - `client/` — Interfaz web principal del proyecto.
+      - `index.html` — Página de entrada del cliente.
+      - `package.json` — Manifiesto npm del cliente.
+      - `src/` — Código fuente del cliente. Contenido no listado.
+      - `tsconfig.json` — Configuración de TypeScript del cliente.
+      - `vite.config.ts` — Configuración de Vite (empaquetado del cliente).
+    - `engine/` — Lógica del motor y pruebas de su comportamiento.
+      - `package.json` — Manifiesto npm del motor.
+      - `src/` — Código fuente del motor. Contenido no listado.
+      - `test/` — Pruebas del motor. Contenido no listado.
+      - `tsconfig.json` — Configuración de TypeScript del motor.
+  - `root-files-description/` — Repositorio de esta web (mapa del proyecto); tiene su propio .git.
+    - `.git` — Datos internos de Git de ese repositorio.
+    - `README.md` — Presentación de este repositorio.
+  - `tests-e2e/` — Automatizaciones de verificación visual y de flujo.
+    - `build.mjs` — ~Script que empaqueta el código para las pruebas.
+    - `e2e-pantallas.py` — ~Prueba end-to-end de pantallas.
+    - `e2e.py` — ~Prueba end-to-end de flujo.
+    - `entry.tsx` — ~Punto de entrada del bundle de pruebas.
+    - `linea-produccion.zip` — ~Copia comprimida de tools/linea-produccion.
+    - `stubs/` — ~Reemplazos simulados usados en las pruebas. Contenido no listado.
+  - `tools/` — Utilidades y recursos experimentales; no forman parte del núcleo del juego.
+    - `demo-combate/` — ~Demo de combate. Contenido no listado.
+    - `ensamblado-2d/` — ~Herramienta de ensamblado 2D. Contenido no listado.
+    - `linea-produccion/` — ~Herramienta de la línea de producción. Contenido no listado.
+    - `tools.zip`
+  - … (hay más archivos no listados)
