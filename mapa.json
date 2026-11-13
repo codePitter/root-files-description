@@ -30,8 +30,7 @@
    "n": "docs.zip",
    "dir": false,
    "c": [],
-   "d": "Copia comprimida de docs/.",
-   "i": true
+   "d": "Copia comprimida de docs/."
   },
   {
    "n": "PROGRESO_entrada_experimento1b_linea_parte4i.md",
@@ -48,15 +47,13 @@
      "n": "CLAUDE.md",
      "dir": false,
      "c": [],
-     "d": "Instrucciones y contexto del proyecto para Claude.",
-     "i": true
+     "d": "Reglas de trabajo obligatorias para Claude: tareas chicas, entrega en zip, verificar y dejar registro de progreso."
     },
     {
      "n": "PROGRESO.md",
      "dir": false,
      "c": [],
-     "d": "Registro general de progreso.",
-     "i": true
+     "d": "Índice general de progreso: estado actual, próximo paso exacto y actualizaciones por fecha."
     },
     {
      "g": true,
@@ -76,8 +73,7 @@
       "tecnicaC",
       "verificar_piezas"
      ],
-     "d": "Entradas del registro de progreso sobre otros frentes del experimento 1b (mechas, planilla, IA, demo de combate, técnica C…).",
-     "i": true
+     "d": "Registro del experimento 1B fuera de la línea: mechas 2 a 5, planillas, paso de IA, técnicas C y D, prompts de entrada y demo de combate."
     },
     {
      "g": true,
@@ -117,8 +113,7 @@
       "4z3",
       "4z4"
      ],
-     "d": "Entradas del registro de progreso sobre la línea de producción del experimento 1b, en partes.",
-     "i": true
+     "d": "Registro de la línea de producción del experimento 1B (partes 1 a 4z4): pasos 0 a 7, ajustes de brazos, muñecas y escudo, y prompts de poses."
     },
     {
      "g": true,
@@ -148,78 +143,67 @@
       "parte5a",
       "verificacion1"
      ],
-     "d": "Entradas del registro de progreso por parte del desarrollo, más una de verificación.",
-     "i": true
+     "d": "Registro del cliente web por parte (2b a 5a: pantallas, Hangar, Mis Mechas, Crear Mecha), arnés E2E y verificación con el proyecto real."
     },
     {
      "n": "PROMPT_RETOMAR.md",
      "dir": false,
      "c": [],
-     "d": "Prompt para retomar el trabajo en una sesión nueva.",
-     "i": true
+     "d": "Prompt para retomar el proyecto en una sesión nueva: qué es, regla de pedir los archivos del paso y archivos por tipo de tarea."
     },
     {
      "n": "README.md",
      "dir": false,
      "c": [],
-     "d": "Presentación de la documentación.",
-     "i": true
+     "d": "README de Rivellon: resumen del motor de combate (@rivellon/engine), pendientes, comandos y decisiones por defecto."
     },
     {
      "n": "documento_conceptual_juego_robots_unificado (1).md",
      "dir": false,
      "c": [],
-     "d": "Documento conceptual del juego de robots; el «(1)» sugiere una copia descargada dos veces.",
-     "i": true
+     "d": "Fuente de verdad del diseño (v0.7, unifica las versiones 0.1 a 0.6). Los demás docs lo citan sin el «(1)»."
     },
     {
      "n": "experimento1b_mecha1.md",
      "dir": false,
      "c": [],
-     "d": "Experimento 1b: notas de la mecha 1.",
-     "i": true
+     "d": "Experimento 1B, mecha 1 «Guardián Urbano» (2D por capas): datos del pedido y prompts listos para copiar."
     },
     {
      "n": "experimento1b_mecha2.md",
      "dir": false,
      "c": [],
-     "d": "Experimento 1b: notas de la mecha 2.",
-     "i": true
+     "d": "Experimento 1B, mecha 2: resultados con silueta base; scripts e imágenes en tools/ensamblado-2d."
     },
     {
      "n": "experimento1b_mecha3a5.md",
      "dir": false,
      "c": [],
-     "d": "Experimento 1b: notas de las mechas 3 a 5.",
-     "i": true
+     "d": "Experimento 1B, mechas 3 a 5: resultados de la primera corrida (diseño y silueta de cada uno)."
     },
     {
      "n": "experimento1b_planilla.xlsx",
      "dir": false,
      "c": [],
-     "d": "Experimento 1b: planilla de datos.",
-     "i": true
+     "d": "Planilla de medición del experimento 1B (por pieza, por mecha, silueta, pieza ajena y decisión 3D vs 2D)."
     },
     {
      "n": "experimento1b_planilla_v2.xlsx",
      "dir": false,
      "c": [],
-     "d": "Experimento 1b: planilla de datos, versión 2.",
-     "i": true
+     "d": "Planilla v2 del circuito actual; reemplaza a la v1 y guarda su histórico."
     },
     {
      "n": "experimento1b_tecnicaC.md",
      "dir": false,
      "c": [],
-     "d": "Experimento 1b: técnica C.",
-     "i": true
+     "d": "Experimento 1B, técnica C: ensamblado por regiones de la silueta (parte 1 de 3)."
     },
     {
      "n": "protocolo_ia_mechas.md",
      "dir": false,
      "c": [],
-     "d": "Protocolo para trabajar con IA en las mechas.",
-     "i": true
+     "d": "Protocolo del experimento de viabilidad: pasar de un boceto hecho por IA a seis piezas que encajen; incluye la variante 2D (§12)."
     },
     {
      "n": "tree.md",
@@ -229,8 +213,7 @@
     }
    ],
    "t": true,
-   "d": "Documentación y registro de progreso.",
-   "i": true
+   "d": "Documentación: reglas de trabajo, diseño del juego, registro de progreso y experimento 1B."
   },
   {
    "n": "packages",
@@ -271,7 +254,7 @@
        "d": "Configuración de Vite (empaquetado del cliente)."
       }
      ],
-     "d": "Interfaz web principal del proyecto."
+     "d": "Interfaz web principal (React 18, Vite 5, react-router); en construcción."
     },
     {
      "n": "engine",
@@ -302,7 +285,7 @@
        "d": "Configuración de TypeScript del motor."
       }
      ],
-     "d": "Lógica del motor y pruebas de su comportamiento."
+     "d": "Reglas del combate, puras y deterministas (TypeScript, Vitest), y sus pruebas."
     }
    ]
   },
@@ -333,29 +316,25 @@
      "n": "build.mjs",
      "dir": false,
      "c": [],
-     "d": "Script que empaqueta el código para las pruebas.",
-     "i": true
+     "d": "Empaqueta el arnés de pruebas con los stubs."
     },
     {
      "n": "e2e-pantallas.py",
      "dir": false,
      "c": [],
-     "d": "Prueba end-to-end de pantallas.",
-     "i": true
+     "d": "Prueba sobre el proyecto real con Vite: que ninguna pantalla scrollee y la interacción de Crear Mecha."
     },
     {
      "n": "e2e.py",
      "dir": false,
      "c": [],
-     "d": "Prueba end-to-end de flujo.",
-     "i": true
+     "d": "Prueba de flujo con el arnés de stubs del Hangar."
     },
     {
      "n": "entry.tsx",
      "dir": false,
      "c": [],
-     "d": "Punto de entrada del bundle de pruebas.",
-     "i": true
+     "d": "Punto de entrada del arnés de pruebas."
     },
     {
      "n": "linea-produccion.zip",
@@ -368,11 +347,10 @@
      "n": "stubs",
      "dir": true,
      "c": [],
-     "d": "Reemplazos simulados usados en las pruebas.",
-     "i": true
+     "d": "Reemplazos simulados del Hangar usados por el arnés."
     }
    ],
-   "d": "Automatizaciones de verificación visual y de flujo."
+   "d": "Pruebas end-to-end (Playwright): verificación visual de pantallas y de flujo."
   },
   {
    "n": "tools",
@@ -382,32 +360,30 @@
      "n": "demo-combate",
      "dir": true,
      "c": [],
-     "d": "Demo de combate.",
-     "i": true
+     "d": "Demo de combate 2D con las poses del mecha lobo (experimento 1B)."
     },
     {
      "n": "ensamblado-2d",
      "dir": true,
      "c": [],
-     "d": "Herramienta de ensamblado 2D.",
-     "i": true
+     "d": "Scripts Python provisorios del experimento 1B (ensamblado sobre silueta, métricas); no son código del juego."
     },
     {
      "n": "linea-produccion",
      "dir": true,
      "c": [],
-     "d": "Herramienta de la línea de producción.",
-     "i": true
+     "d": "Web con Pyodide que encadena los pasos de la línea de producción de mechas (experimento 1B)."
     },
     {
      "n": "tools.zip",
      "dir": false,
-     "c": []
+     "c": [],
+     "d": "Archivo comprimido de las herramientas.",
+     "i": true
     }
    ],
    "d": "Utilidades y recursos experimentales; no forman parte del núcleo del juego."
   }
  ],
- "t": true,
- "d": ""
+ "d": "Rivellon: Tactical Mecha Arena. Juego web de combate táctico por turnos entre mechas modulares (monorepo con npm workspaces)."
 }
