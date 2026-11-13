@@ -1,21 +1,10 @@
 # rivellon-arena — mapa del proyecto
-Generado: 2026-11-13. `~` = descripción inferida del nombre (por confirmar). Fecha entre paréntesis = última modificación en Git. El tree de origen estaba truncado donde dice «…».
+Generado: 2026-11-13. Fecha entre paréntesis = última modificación en Git. `~` = descripción inferida del nombre (por confirmar).
 
 - `rivellon-arena/` — Rivellon: Tactical Mecha Arena. Juego web de combate táctico por turnos entre mechas modulares (monorepo con npm workspaces).
-  - `.gitignore` — Archivos y carpetas que Git ignora.
-  - `README.md` — Presentación general del proyecto.
-  - `package.json` — Manifiesto npm de la raíz.
-  - `package-lock.json` — Versiones exactas de las dependencias.
-  - `docs.zip` — Copia comprimida de docs/.
-  - `PROGRESO_entrada_experimento1b_linea_parte4i.md` — ~Entrada de progreso suelta en la raíz; también existe en docs/.
   - `docs/` — Documentación: reglas de trabajo, diseño del juego, registro de progreso y experimento 1B.
     - `CLAUDE.md` — Reglas de trabajo obligatorias para Claude: tareas chicas, entrega en zip, verificar y dejar registro de progreso.
-    - `PROGRESO.md` — Índice general de progreso: estado actual, próximo paso exacto y actualizaciones por fecha.
-    - `PROGRESO_entrada_experimento1b_{demo_combate,dr_mecha2a4,dr_mecha4_sexta,ia,mecha2,mecha2b,mecha3a5,planilla,planilla_v2,prompts_entrada,recorte,tecnicaC,verificar_piezas}.md` ×13 — Registro del experimento 1B fuera de la línea: mechas 2 a 5, planillas, paso de IA, técnicas C y D, prompts de entrada y demo de combate. ()
-    - `PROGRESO_entrada_experimento1b_linea_parte{1,2,3a,3b,3c,4a,4b,4c,4d,4e,4f,4g,4h,4i,4j,4k,4l,4m,4n,4o,4q,4r,4s,4t,4u,4v,4w,4x,4y,4z,4z2,4z3,4z4}.md` ×33 — Registro de la línea de producción del experimento 1B (partes 1 a 4z4): pasos 0 a 7, ajustes de brazos, muñecas y escudo, y prompts de poses. ()
-    - `PROGRESO_entrada_{parte2b,parte3a,parte3b1,parte3b2,parte3b3,parte3c,parte4a,parte4a2,parte4a3,parte4a4,parte4b,parte4b2,parte4b3,parte4c,parte4d1,parte4d2,parte4d3,parte4d4,parte4d5,parte4e1,parte4e2,parte5a,verificacion1}.md` ×23 — Registro del cliente web por parte (2b a 5a: pantallas, Hangar, Mis Mechas, Crear Mecha), arnés E2E y verificación con el proyecto real. ()
-    - `PROMPT_RETOMAR.md` — Prompt para retomar el proyecto en una sesión nueva: qué es, regla de pedir los archivos del paso y archivos por tipo de tarea.
-    - `README.md` — README de Rivellon: resumen del motor de combate (@rivellon/engine), pendientes, comandos y decisiones por defecto.
+    - `descripcion_archivos.md` — Este inventario con una descripción breve por archivo.
     - `documento_conceptual_juego_robots_unificado (1).md` — Fuente de verdad del diseño (v0.7, unifica las versiones 0.1 a 0.6). Los demás docs lo citan sin el «(1)».
     - `experimento1b_mecha1.md` — Experimento 1B, mecha 1 «Guardián Urbano» (2D por capas): datos del pedido y prompts listos para copiar.
     - `experimento1b_mecha2.md` — Experimento 1B, mecha 2: resultados con silueta base; scripts e imágenes en tools/ensamblado-2d.
@@ -23,33 +12,162 @@ Generado: 2026-11-13. `~` = descripción inferida del nombre (por confirmar). Fe
     - `experimento1b_planilla.xlsx` — Planilla de medición del experimento 1B (por pieza, por mecha, silueta, pieza ajena y decisión 3D vs 2D).
     - `experimento1b_planilla_v2.xlsx` — Planilla v2 del circuito actual; reemplaza a la v1 y guarda su histórico.
     - `experimento1b_tecnicaC.md` — Experimento 1B, técnica C: ensamblado por regiones de la silueta (parte 1 de 3).
+    - `PROGRESO.md` — Índice general de progreso: estado actual, próximo paso exacto y actualizaciones por fecha.
+    - `PROMPT_RETOMAR.md` — Prompt para retomar el proyecto en una sesión nueva: qué es, regla de pedir los archivos del paso y archivos por tipo de tarea.
     - `protocolo_ia_mechas.md` — Protocolo del experimento de viabilidad: pasar de un boceto hecho por IA a seis piezas que encajen; incluye la variante 2D (§12).
+    - `README.md` — README de Rivellon: resumen del motor de combate (@rivellon/engine), pendientes, comandos y decisiones por defecto.
     - `tree.md` — Este mismo árbol del proyecto, en texto.
-    - … (hay más archivos no listados)
+    - `PROGRESO_entrada_experimento1b_linea_parte{1,2,3a,3b,3c,4a,4b,4c,4d,4e,4f,4g,4h,4i,4j,4k,4l,4m,4n,4o,4q,4r,4s,4t,4u,4v,4w,4x,4y,4z,4z2,4z3,4z4}.md` ×33 — Registro de la línea de producción del experimento 1B (partes 1 a 4z4). ()
+    - `PROGRESO_entrada_experimento1b_{demo_combate,dr_mecha2a4,dr_mecha4_sexta,ia,mecha2,mecha2b,mecha3a5,planilla,planilla_v2,prompts_entrada,recorte,tecnicaC,verificar_piezas}.md` ×13 — Registro del experimento 1B fuera de la línea: mechas 2 a 5, planillas, paso de IA, técnicas C y D, demo de combate. ()
+    - `PROGRESO_entrada_{parte2b,parte3a,parte3b1,parte3b2,parte3b3,parte3c,parte4a,parte4a2,parte4a3,parte4a4,parte4b,parte4b2,parte4b3,parte4c,parte4d1,parte4d2,parte4d3,parte4d4,parte4d5,parte4e1,parte4e2,parte5a,verificacion1}.md` ×23 — Registro del cliente web por parte (2b a 5a), arnés E2E y verificación con el proyecto real. ()
   - `packages/`
     - `client/` — Interfaz web principal (React 18, Vite 5, react-router); en construcción.
-      - `index.html` — Página de entrada del cliente.
-      - `package.json` — Manifiesto npm del cliente.
-      - `src/` — Código fuente del cliente. Contenido no listado.
-      - `tsconfig.json` — Configuración de TypeScript del cliente.
-      - `vite.config.ts` — Configuración de Vite (empaquetado del cliente).
+      - `src/` — Código fuente del cliente: app, pantallas, estilos y componentes de interfaz.
+        - `app/`
+          - `app.tsx` — Componente raíz de la aplicación y contenedor de navegación.
+          - `routes.ts` — Definición de las rutas y pantallas disponibles.
+        - `screens/` — Pantallas del cliente (Ciudad, Crear Mecha, Fábrica, Hangar, Home, Perfil).
+          - `city/`
+            - `city-screen.tsx` — Pantalla Ciudad con accesos a sus secciones.
+            - `public-profile-modal.tsx` — Modal con la vista del perfil público de un jugador.
+          - `create-mecha/`
+            - `create-mecha-data.ts` — Datos y opciones que usa el flujo de creación del mecha.
+            - `create-mecha-screen.tsx` — Pantalla que coordina los pasos de Crear Mecha.
+            - `create-mecha.css` — Estilos específicos del flujo Crear Mecha.
+            - `create-summary.tsx` — Resumen de los datos y atributos del mecha en creación.
+            - `design-step.tsx` — Contenido del paso Diseño del constructor.
+            - `mecha-preview.tsx` — Vista previa visual del diseño del mecha.
+            - `step-tabs.tsx` — Pestañas o indicadores de los pasos del constructor.
+          - `factory/`
+            - `factory-screen.tsx` — Pantalla Fábrica y presentación de sus servicios.
+          - `hangar/`
+            - `my-mechas/`
+              - `mecha-ficha.css` — Estilos de la ficha de un mecha.
+              - `mecha-ficha.tsx` — Ficha con información y atributos del mecha seleccionado.
+              - `mecha-fixtures.ts` — Datos de prueba de mechas usados por la interfaz.
+              - `mecha-stage.tsx` — Escenario o vista central donde se presenta el mecha.
+              - `mecha-summary.ts` — Funciones para resumir o derivar información de un mecha.
+              - `my-mechas-section.tsx` — Sección del Hangar para recorrer y gestionar Mis Mechas.
+              - `my-mechas.css` — Estilos de la sección Mis Mechas.
+            - `hangar-scene.css` — Estilos de la escena central del Hangar.
+            - `hangar-screen.tsx` — Pantalla principal del Hangar y sus secciones.
+          - `home/`
+            - `home-screen.tsx` — Pantalla principal con los accesos centrales del juego.
+          - `profile/`
+            - `personal-profile-screen.tsx` — Pantalla de perfil personal y edición de sus datos.
+        - `styles/` — Fuentes, tokens de diseño y estilos globales.
+          - `fonts.ts` — Declaración y carga de las fuentes tipográficas de la interfaz.
+          - `global.css` — Estilos globales y reglas base de la aplicación.
+          - `tokens.css` — Variables CSS compartidas de diseño, como colores y medidas.
+          - `tokens.ts` — Valores de diseño compartidos disponibles desde TypeScript.
+        - `ui/` — Componentes de interfaz reutilizables.
+          - `brand-logo.tsx` — Componente del logotipo de Rivellon.
+          - `button-link.tsx` — Componente reutilizable de enlace con apariencia de botón.
+          - `button.tsx` — Componente reutilizable de botón.
+          - `card-link.tsx` — Componente de tarjeta que funciona como enlace de navegación.
+          - `icons.tsx` — Componentes de iconos de interfaz.
+          - `modal.tsx` — Estructura reutilizable para ventanas modales.
+          - `notice.css` — Estilos de las notificaciones de interfaz.
+          - `notice.tsx` — Componente de notificación o aviso temporal.
+          - `panel.tsx` — Componente reutilizable de panel.
+          - `placeholder-screen.tsx` — Pantalla provisional para secciones todavía no implementadas.
+          - `screen-header.tsx` — Cabecera compartida de las pantallas.
+          - `screen.css` — Estilos comunes de composición y tamaño de pantalla.
+          - `ui.css` — Estilos compartidos de los componentes de interfaz.
+          - `user-chip.tsx` — Componente compacto de identidad del usuario.
+        - `main.tsx` — Punto de entrada React; monta la aplicación y sus estilos globales.
+      - `index.html` — Documento HTML de entrada servido por Vite para el cliente.
+      - `package.json` — Dependencias, metadatos y scripts npm del cliente web.
+      - `tsconfig.json` — Opciones de compilación y comprobación TypeScript del cliente.
+      - `vite.config.ts` — Configuración de Vite para desarrollo y compilación del cliente.
     - `engine/` — Reglas del combate, puras y deterministas (TypeScript, Vitest), y sus pruebas.
-      - `package.json` — Manifiesto npm del motor.
-      - `src/` — Código fuente del motor. Contenido no listado.
-      - `test/` — Pruebas del motor. Contenido no listado.
-      - `tsconfig.json` — Configuración de TypeScript del motor.
+      - `src/` — Código fuente del motor de combate.
+        - `combat.ts` — Creación del estado de combate y aplicación de acciones y reglas.
+        - `hex.ts` — Operaciones y utilidades de coordenadas para el tablero hexagonal.
+        - `index.ts` — Exportaciones públicas del paquete de motor.
+        - `rng.ts` — Generador pseudoaleatorio determinista usado por el combate.
+        - `rules.ts` — Constantes provisionales y parámetros de las reglas de combate.
+        - `types.ts` — Tipos compartidos para estados, acciones, eventos y unidades.
+      - `test/` — Pruebas del motor.
+        - `combat.test.ts` — Pruebas unitarias del comportamiento del motor de combate.
+      - `package.json` — Dependencias, metadatos y scripts npm del motor.
+      - `tsconfig.json` — Opciones de TypeScript para compilar y validar el motor.
   - `root-files-description/` — Repositorio de esta web (mapa del proyecto); tiene su propio .git.
     - `.git` — Datos internos de Git de ese repositorio.
-    - `README.md` — Presentación de este repositorio.
+    - `build.py` — Genera `MAPA.md` e `index.html` a partir de `mapa.json`.
+    - `index.html` — Vista web navegable del mapa de archivos, con filtro y opción de copiar.
+    - `mapa.json` — Datos estructurados de rutas, descripciones y agrupaciones usados por el generador.
+    - `MAPA.md` — Mapa descriptivo del proyecto generado desde `mapa.json`.
+    - `README.md` — Presentación del generador y de los archivos del mapa del proyecto.
   - `tests-e2e/` — Pruebas end-to-end (Playwright): verificación visual de pantallas y de flujo.
-    - `build.mjs` — Empaqueta el arnés de pruebas con los stubs.
+    - `stubs/` — Reemplazos simulados usados por el arnés.
+      - `empty.ts` — Módulo vacío usado como sustituto durante la compilación del arnés.
+      - `react-router-dom.tsx` — Sustituto de React Router para aislar las pantallas en el arnés.
+    - `build.mjs` — Prepara y empaqueta el arnés de pruebas end-to-end con sus stubs.
     - `e2e-pantallas.py` — Prueba sobre el proyecto real con Vite: que ninguna pantalla scrollee y la interacción de Crear Mecha.
-    - `e2e.py` — Prueba de flujo con el arnés de stubs del Hangar.
+    - `e2e.py` — Prueba end-to-end del flujo usando el arnés con componentes simulados.
     - `entry.tsx` — Punto de entrada del arnés de pruebas.
     - `linea-produccion.zip` — ~Copia comprimida de tools/linea-produccion.
-    - `stubs/` — Reemplazos simulados del Hangar usados por el arnés. Contenido no listado.
   - `tools/` — Utilidades y recursos experimentales; no forman parte del núcleo del juego.
-    - `demo-combate/` — Demo de combate 2D con las poses del mecha lobo (experimento 1B). Contenido no listado.
-    - `ensamblado-2d/` — Scripts Python provisorios del experimento 1B (ensamblado sobre silueta, métricas); no son código del juego. Contenido no listado.
-    - `linea-produccion/` — Web con Pyodide que encadena los pasos de la línea de producción de mechas (experimento 1B). Contenido no listado.
+    - `demo-combate/` — Demo de combate 2D con las poses del mecha lobo (experimento 1B).
+      - `assets/`
+        - `hoja_poses_lobo.png` — Hoja de sprites con poses del mecha lobo para la animación.
+        - `mecha_lobo.json` — Metadatos de las poses y de su orientación nativa.
+        - `mecha_lobo.png` — Imagen del mecha lobo en pose de reposo.
+      - `css/`
+        - `demo.css` — Presentación visual de la demo y sus controles.
+      - `js/`
+        - `animaciones.js` — Animaciones de movimiento, ataque, defensa, daño y derrota.
+        - `escena.js` — Dibujo del tablero y de los mechas en el canvas.
+        - `main.js` — Inicialización de la demo y conexión de controles y animaciones.
+        - `motor-falso.js` — Simulación simplificada de eventos de combate para la demo.
+        - `recorte.js` — Recorte de las poses y del fondo de las imágenes de entrada.
+      - `index.html` — Página de entrada de la demo de combate.
+      - `README.md` — Instrucciones, flujo y límites de la demo de combate 2D.
+    - `ensamblado-2d/` — Scripts Python provisorios del experimento 1B (ensamblado sobre silueta, métricas); no son código del juego.
+      - `__pycache__/` — Bytecode de Python cacheado; no hace falta versionarlo. Archivos: ajustar.cpython-312.pyc, assemble.cpython-312.pyc, colocar.cpython-312.pyc, detectar.cpython-312.pyc, regiones.cpython-312.pyc, seg.cpython-312.pyc
+      - `mecha2/`
+        - `entrada/` — Entradas: hoja de piezas, silueta guía y anclas. Archivos: anclas.json, ensamblado_original_modoB.png, hoja_piezas.png, silueta.png
+        - `piezas/` — Recortes de las piezas y sus metadatos (piezas.json). Archivos: aux.png, head.png, left_arm.png, legs.png, piezas.json, right_arm.png, torso.png
+        - `salida/` — Resultados del ensamblado (out_D, out_DR, ia_resultado), superposiciones y métricas. Archivos: debug_DR.png, ia_resultado.png, ia_resultado_color.png, metricas.json, metricas_C.json, metricas_D.json, metricas_DR.json, metricas_fijos.json, out_D.png, out_DR.png, overlay.png, overlay_D.png
+      - `mecha3/`
+        - `entrada/` — Entradas: hoja de piezas, silueta guía y anclas. Archivos: anclas.json, hoja_piezas.png, silueta.png
+        - `piezas/` — Recortes de las piezas y sus metadatos (piezas.json). Archivos: aux.png, head.png, left_arm.png, legs.png, piezas.json, right_arm.png, torso.png
+        - `salida/` — Resultados del ensamblado (out_D, out_DR, ia_resultado), superposiciones y métricas. Archivos: debug_DR.png, ia_resultado.png, ia_resultado_color.png, metricas.json, metricas_C.json, metricas_D.json, metricas_DR.json, out_D.png, out_DR.png, overlay.png, overlay_D.png
+      - `mecha4/`
+        - `entrada/` — Entradas: hoja de piezas, silueta guía y anclas. Archivos: anclas.json, hoja_piezas.png, silueta.png
+        - `piezas/` — Recortes de las piezas y sus metadatos (piezas.json). Archivos: aux.png, head.png, left_arm.png, legs.png, piezas.json, right_arm.png, torso.png
+        - `salida/` — Resultados del ensamblado (out_D, out_DR, ia_resultado), superposiciones y métricas. Archivos: debug_DR.png, ia_resultado.png, ia_resultado_color.png, metricas.json, metricas_C.json, metricas_D.json, metricas_DR.json, out_DR.png, overlay.png
+      - `mecha5/`
+        - `entrada/` — Entradas: hoja de piezas, silueta guía y anclas. Archivos: anclas.json, hoja_piezas.png, silueta.png
+        - `piezas/` — Recortes de las piezas y sus metadatos (piezas.json). Archivos: aux.png, head.png, left_arm.png, legs.png, piezas.json, right_arm.png, torso.png
+        - `salida/` — Resultados del ensamblado (out_D, out_DR, ia_resultado), superposiciones y métricas. Archivos: debug_DR.png, ia_resultado.png, ia_resultado_color.png, metricas.json, metricas_C.json, metricas_D.json, metricas_DR.json, out_D.png, out_DR.png, overlay.png, overlay_D.png
+      - `ensamblar.py` — Ensamblado experimental por regiones de silueta (técnica C).
+      - `exportar.py` — Recorta las piezas de una hoja y exporta sus imágenes y metadatos.
+      - `overlay.py` — Genera una superposición visual para comparar piezas y silueta.
+      - `preparar_ia.py` — Prepara imágenes y datos para el paso experimental de IA.
+      - `prompt_hoja.txt` — Prompt experimental para generar la hoja de piezas del mecha.
+      - `prompt_silueta.txt` — Prompt experimental para generar la silueta guía del mecha.
+      - `README.md` — Guía del experimento, scripts disponibles, entradas, resultados y limitaciones.
+    - `linea-produccion/` — Web que ayuda a armar los prompts de la línea de producción de mechas (experimento 1B).
+      - `css/`
+        - `linea.css` — Estilos de la página de la línea de producción.
+      - `js/`
+        - `main.js` — Lógica principal de la interfaz y del flujo de trabajo.
+        - `prompts.js` — Carga y composición de las plantillas de prompts.
+        - `visor.js` — Utilidades de interfaz y visualización de los pasos.
+      - `prompts/`
+        - `prompt_ensamblado.txt` — Plantilla para pedir a ChatGPT que ensamble las piezas del mecha.
+        - `prompt_hoja.txt` — Plantilla para generar una hoja con las piezas separadas del mecha.
+        - `prompt_pose_unica.txt` — Plantilla para solicitar una pose individual del mecha.
+        - `prompt_poses.txt` — Plantilla principal para generar una hoja de poses de combate.
+        - `prompt_poses_v2.txt` — Variante de la plantilla de poses con restricciones de encuadre y consistencia.
+        - `prompt_silueta.txt` — Plantilla experimental para generar una silueta guía.
+      - `index.html` — Página de entrada de la línea de producción de mechas.
+      - `README.md` — Instrucciones y flujo de la herramienta web experimental de prompts.
     - `tools.zip` — ~Archivo comprimido de las herramientas.
+  - `.gitignore` — Patrones de archivos y carpetas que Git debe ignorar.
+  - `docs.zip` — Copia comprimida de docs/.
+  - `package-lock.json` — Versiones bloqueadas de las dependencias npm instaladas.
+  - `package.json` — Manifiesto npm raíz; define los workspaces y comandos compartidos.
+  - `README.md` — Presentación del proyecto, estado del motor, pendientes y comandos de desarrollo.

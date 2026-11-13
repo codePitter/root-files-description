@@ -18,10 +18,14 @@ def desc(n):
 def H(n,p,top=False):
     if n.get('g'):
         ds=[dt(p+'/'+f) for f in gnames(n)];m=max(ds)
-        fs=''.join(f'<li class="f"><span class="n">{e(f)}</span><span class="m">{d}</span></li>' for f,d in zip(gnames(n),ds))
+        sd=n.get('sd') or ['']*len(ds)
+        fs=''.join(f'<li class="f"><span class="n">{e(f)}</span><span class="d">{e(x)}</span><span class="m">{d}</span></li>' for f,x,d in zip(gnames(n),sd,ds))
         return f'<li><details><summary><span class="n">{e(n["p"])}*.md <b>×{len(n["s"])}</b></span><span class="d i">{e(n["d"])}</span><span class="m">{m}</span></summary><ul>{fs}</ul></details></li>'
     ic=' i' if n.get('i') else ''
     if n['dir']:
+        if n.get('fl'):
+            fl=''.join(f'<li class="f"><span class="n">{e(f)}</span><span class="m">{dt(p+"/"+f)}</span></li>' for f in n['fl'])
+            return f'<li><details><summary><span class="n">{e(n["n"])}/</span><span class="d">{e(n.get("d",""))}</span></summary><ul>{fl}</ul></details></li>'
         ch=''.join(H(c,p+'/'+c.get('n','')) for c in n['c'])
         if n.get('t'): ch+='<li class="f"><span class="n">…</span><span class="d">Hay más archivos que no figuran en el tree original.</span></li>'
         return f'<li><details open><summary><span class="n">{e(n["n"])}/</span><span class="d{ic}">{e(desc(n))}</span></summary><ul>{ch}</ul></details></li>'
@@ -30,13 +34,18 @@ def M(n,p,k=0):
     s='  '*k;i='~' if n.get('i') else ''
     if n.get('g'):
         return [f'{s}- `{n["p"]}{{{",".join(n["s"])}}}.md` ×{len(n["s"])} — {i}{n["d"]} ({max(dt(p+"/"+f) for f in gnames(n))})']
+    if n.get('fl'): return [f'{s}- `{n["n"]}/` — {n.get("d","")} Archivos: {", ".join(n["fl"])}']
     d=desc(n);dd=dt(p) if not n['dir'] else ''
     o=[f'{s}- `{n["n"]}{"/" if n["dir"] else ""}`'+(f' — {i}{d}' if d else '')+(f' ({dd})' if dd else '')]
     for c in n['c']: o+=M(c,p+'/'+c.get('n',''),k+1)
     if n.get('t'): o.append(f'{s}  - … (hay más archivos no listados)')
     return o
+def anyk(n,k):
+    return bool(n.get(k)) or any(anyk(c,k) for c in n.get('c',[]))
+legend=(' `~` = descripción inferida del nombre (por confirmar).' if anyk(root,'i') else '')+(' El tree de origen estaba truncado donde dice «…».' if anyk(root,'t') else '')
+legendh=legend.replace('`~`','<span style="color:var(--ac)">~</span>')
 today=datetime.date.today().isoformat()
-md='\n'.join([f'# {root["n"]} — mapa del proyecto',f'Generado: {today}. `~` = descripción inferida del nombre (por confirmar). Fecha entre paréntesis = última modificación en Git. El tree de origen estaba truncado donde dice «…».','']+M(root,''))+'\n'
+md='\n'.join([f'# {root["n"]} — mapa del proyecto',f'Generado: {today}. Fecha entre paréntesis = última modificación en Git.{legend}','']+M(root,''))+'\n'
 (here/'MAPA.md').write_text(md,encoding='utf8')
 page=f'''<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{root["n"]} · mapa del proyecto</title>
 <style>:root{{--bg:#f3f5f7;--ink:#1b2530;--mut:#5b6876;--line:#d6dce2;--ac:#1f6f78}}
@@ -53,7 +62,7 @@ li{{padding:.12rem 0}}summary,.f{{display:flex;gap:.2rem .9rem;flex-wrap:wrap;al
 .d.i{{font-style:italic}}.d.i::before{{content:"~ ";color:var(--ac)}}.m{{margin-left:auto;font:.8rem ui-monospace,monospace;color:var(--mut)}}
 .n b{{color:var(--ac);font-weight:600}}</style></head><body><main>
 <h1>{root["n"]}</h1><p>Mapa del proyecto, generado el {today}. Una línea por archivo y su última modificación.</p>
-<p><span style="color:var(--ac)">~</span> descripción inferida del nombre, por confirmar. El tree de origen estaba truncado donde aparece «…».</p>
+<p>{legendh}</p>
 <div class="bar"><input id="q" type="search" placeholder="Filtrar archivos" aria-label="Filtrar archivos"><button id="cp">Copiar mapa como texto</button><a href="MAPA.md">Ver MAPA.md</a></div>
 <ul>{H(root,'')}</ul></main>
 <script type="text/plain" id="md">{e(md)}</script>
