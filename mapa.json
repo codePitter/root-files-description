@@ -1,1334 +1,2085 @@
 {
- "n": "rivellon-arena",
- "dir": true,
- "c": [
-  {
-   "n": "docs",
-   "dir": true,
-   "c": [
+  "n": "rivellon-arena",
+  "dir": true,
+  "c": [
     {
-     "n": "CLAUDE.md",
-     "dir": false,
-     "c": [],
-     "d": "Reglas de trabajo obligatorias para Claude: tareas chicas, entrega en zip, verificar y dejar registro de progreso."
+      "n": "docs",
+      "dir": true,
+      "c": [
+        {
+          "n": "CLAUDE.md",
+          "dir": false,
+          "c": [],
+          "d": "Instrucciones de trabajo del proyecto: alcance de tareas, arquitectura, diseño, navegación y registro de progreso."
+        },
+        {
+          "n": "descripcion_archivos.md",
+          "dir": false,
+          "c": [],
+          "d": "Este inventario con una descripción breve por archivo."
+        },
+        {
+          "n": "documento_conceptual_juego_robots_unificado (1).md",
+          "dir": false,
+          "c": [],
+          "d": "Documento conceptual unificado que define el diseño y las reglas del juego."
+        },
+        {
+          "n": "experimento1b_mecha1.md",
+          "dir": false,
+          "c": [],
+          "d": "Diseño y prompts del primer mecha del Experimento 1B, «Guardián Urbano»."
+        },
+        {
+          "n": "experimento1b_mecha2.md",
+          "dir": false,
+          "c": [],
+          "d": "Resultados del experimento de ensamblado 2D con el mecha 2."
+        },
+        {
+          "n": "experimento1b_mecha3a5.md",
+          "dir": false,
+          "c": [],
+          "d": "Resultados experimentales de los mechas 3, 4 y 5."
+        },
+        {
+          "n": "experimento1b_planilla.xlsx",
+          "dir": false,
+          "c": [],
+          "d": "Planilla de medición original del Experimento 1B."
+        },
+        {
+          "n": "experimento1b_planilla_v2.xlsx",
+          "dir": false,
+          "c": [],
+          "d": "Segunda versión de la planilla de medición experimental."
+        },
+        {
+          "n": "experimento1b_tecnicaC.md",
+          "dir": false,
+          "c": [],
+          "d": "Explicación de la técnica C: ensamblado de piezas por regiones de la silueta."
+        },
+        {
+          "n": "PROGRESO.md",
+          "dir": false,
+          "c": [],
+          "d": "Índice general del progreso y del próximo paso de desarrollo."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_demo_combate.md",
+          "dir": false,
+          "c": [],
+          "d": "Registro de la demo de combate 2D animada con las poses del mecha lobo."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_dr_mecha2a4.md",
+          "dir": false,
+          "c": [],
+          "d": "Registro de resultados `out_DR` para los mechas 2, 3 y 4."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_dr_mecha4_sexta.md",
+          "dir": false,
+          "c": [],
+          "d": "Registro de la sexta corrección de anclas y altura de brazos del mecha 4."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_ia.md",
+          "dir": false,
+          "c": [],
+          "d": "Registro de la simplificación del paso de intervención de IA."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_linea_parte1.md",
+          "dir": false,
+          "c": [],
+          "d": "Implementación inicial de la línea web y sus pasos 0 a 2."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_linea_parte2.md",
+          "dir": false,
+          "c": [],
+          "d": "Implementación del paso 3 de la línea: detección de anclas."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_linea_parte3a.md",
+          "dir": false,
+          "c": [],
+          "d": "Registro de los pasos 4 y 5 de la línea de producción."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_linea_parte3b.md",
+          "dir": false,
+          "c": [],
+          "d": "Registro parcial del paso 7 de la línea de producción."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_linea_parte3c.md",
+          "dir": false,
+          "c": [],
+          "d": "Cierre de la parte 3b y registro del paso 6."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_linea_parte4a.md",
+          "dir": false,
+          "c": [],
+          "d": "Registro de los scripts de ejecución completa y verificación."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_linea_parte4b.md",
+          "dir": false,
+          "c": [],
+          "d": "Registro de la medición de resultados y exportación a CSV."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_linea_parte4c.md",
+          "dir": false,
+          "c": [],
+          "d": "Registro de la verificación de la hoja de piezas en el paso 1."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_linea_parte4d.md",
+          "dir": false,
+          "c": [],
+          "d": "Ajustes para detectar armas y manos y mejorar las anclas del brazo."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_linea_parte4e.md",
+          "dir": false,
+          "c": [],
+          "d": "Ajuste de la detección del torso tomando los hombros como referencia."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_linea_parte4f.md",
+          "dir": false,
+          "c": [],
+          "d": "Ajuste de los puntos de hombro hacia los extremos superiores de las hombreras."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_linea_parte4g.md",
+          "dir": false,
+          "c": [],
+          "d": "Ajuste del encastre de los brazos mediante el ancho del bíceps."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_linea_parte4h.md",
+          "dir": false,
+          "c": [],
+          "d": "Comparación de los bíceps de las piezas con los de la silueta."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_linea_parte4i.md",
+          "dir": false,
+          "c": [],
+          "d": "Ajuste de la escala del brazo usando el ancho del bíceps de la silueta."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_linea_parte4j.md",
+          "dir": false,
+          "c": [],
+          "d": "Ajuste para igualar el largo de los brazos."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_linea_parte4k.md",
+          "dir": false,
+          "c": [],
+          "d": "Ajuste de la posición de la muñeca usando el borde de la muñequera."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_linea_parte4l.md",
+          "dir": false,
+          "c": [],
+          "d": "Corrección de orientación del brazo con escudo y su pulgar."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_linea_parte4m.md",
+          "dir": false,
+          "c": [],
+          "d": "Alineación de las muñecas de las piezas con las muñecas de la silueta."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_linea_parte4n.md",
+          "dir": false,
+          "c": [],
+          "d": "Corrección del encuadre del paso 3 y opción de piernas completas en el paso 4."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_linea_parte4o.md",
+          "dir": false,
+          "c": [],
+          "d": "Separación de la validación de pose y color para decidir la corrección del paso 7."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_linea_parte4q.md",
+          "dir": false,
+          "c": [],
+          "d": "Espejado automático de un brazo cuando la verificación detecta dos del mismo lado."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_linea_parte4r.md",
+          "dir": false,
+          "c": [],
+          "d": "Corrección para conservar en el paso 3 el espejo aplicado en el paso 1."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_linea_parte4s.md",
+          "dir": false,
+          "c": [],
+          "d": "Actualización del prompt de silueta para incluir la cabeza."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_linea_parte4t.md",
+          "dir": false,
+          "c": [],
+          "d": "Actualización del prompt de ensamblado para corregir brazos desproporcionados."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_linea_parte4u.md",
+          "dir": false,
+          "c": [],
+          "d": "Ajustes del lado del escudo y de la detección de muñeca con accesorios."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_linea_parte4v.md",
+          "dir": false,
+          "c": [],
+          "d": "Actualización del prompt para exigir apariencia mecánica en las piezas."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_linea_parte4w.md",
+          "dir": false,
+          "c": [],
+          "d": "Especificación explícita de la dirección de cada brazo en el prompt."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_linea_parte4x.md",
+          "dir": false,
+          "c": [],
+          "d": "Cambio del orden de las piezas para generar los brazos juntos como par espejado."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_linea_parte4y.md",
+          "dir": false,
+          "c": [],
+          "d": "Retiro del ensamblado por scripts y delegación del ensamblado a ChatGPT."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_linea_parte4z.md",
+          "dir": false,
+          "c": [],
+          "d": "Diseño del prompt para generar poses de animación para el combate en grilla."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_linea_parte4z2.md",
+          "dir": false,
+          "c": [],
+          "d": "Registro de la hoja de poses aprobada del mecha lobo y del prompt de pose única."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_linea_parte4z3.md",
+          "dir": false,
+          "c": [],
+          "d": "Variante ajustada del prompt para generar hojas de poses."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_linea_parte4z4.md",
+          "dir": false,
+          "c": [],
+          "d": "Primera tanda para retirar el prompt de silueta e incorporar separación y recorte."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_linea_parte4z5.md",
+          "dir": false,
+          "c": [],
+          "d": "Segunda tanda: paso del navegador que separa las seis piezas de la hoja con fondo transparente."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_linea_parte4z6.md",
+          "dir": false,
+          "c": [],
+          "d": "Tercera tanda: pasos de navegador para recortar el mecha ensamblado y las poses, y módulo común de recorte."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_linea_parte4z7.md",
+          "dir": false,
+          "c": [],
+          "d": "Corrector de color y brillo de los pasos de recorte, igualado a la hoja de piezas."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_mecha2.md",
+          "dir": false,
+          "c": [],
+          "d": "Registro de la silueta base del mecha 2 y los ajustes de ancho de piernas."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_mecha2b.md",
+          "dir": false,
+          "c": [],
+          "d": "Registro de métricas de piernas y detección automática para el mecha 2."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_mecha3a5.md",
+          "dir": false,
+          "c": [],
+          "d": "Registro de las pruebas experimentales con los mechas 3 a 5."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_planilla.md",
+          "dir": false,
+          "c": [],
+          "d": "Registro de creación y uso de la planilla de medición."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_planilla_v2.md",
+          "dir": false,
+          "c": [],
+          "d": "Registro de cambios de la segunda versión de la planilla."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_prompts_entrada.md",
+          "dir": false,
+          "c": [],
+          "d": "Registro de los prompts usados para generar las entradas del experimento."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_recorte.md",
+          "dir": false,
+          "c": [],
+          "d": "Registro de pruebas y ajustes del recorte de piezas y silueta."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_tecnicaC.md",
+          "dir": false,
+          "c": [],
+          "d": "Registro de la implementación y evaluación experimental de la técnica C."
+        },
+        {
+          "n": "PROGRESO_entrada_experimento1b_verificar_piezas.md",
+          "dir": false,
+          "c": [],
+          "d": "Registro de la verificación automática de la hoja de piezas."
+        },
+        {
+          "n": "PROGRESO_entrada_parte2b.md",
+          "dir": false,
+          "c": [],
+          "d": "Creación de las pantallas vacías del cliente web."
+        },
+        {
+          "n": "PROGRESO_entrada_parte3a.md",
+          "dir": false,
+          "c": [],
+          "d": "Creación de componentes base reutilizables de la interfaz."
+        },
+        {
+          "n": "PROGRESO_entrada_parte3b1.md",
+          "dir": false,
+          "c": [],
+          "d": "Incorporación de ButtonLink, cabecera de pantalla y Hangar."
+        },
+        {
+          "n": "PROGRESO_entrada_parte3b2.md",
+          "dir": false,
+          "c": [],
+          "d": "Incorporación de CardLink, Home, Ciudad y modal de perfil público."
+        },
+        {
+          "n": "PROGRESO_entrada_parte3b3.md",
+          "dir": false,
+          "c": [],
+          "d": "Incorporación de Fábrica, perfil personal y placeholders; cierre de la migración."
+        },
+        {
+          "n": "PROGRESO_entrada_parte3c.md",
+          "dir": false,
+          "c": [],
+          "d": "Incorporación de las fuentes Rajdhani y Exo 2."
+        },
+        {
+          "n": "PROGRESO_entrada_parte4a.md",
+          "dir": false,
+          "c": [],
+          "d": "Lista de Mis Mechas con datos de prueba."
+        },
+        {
+          "n": "PROGRESO_entrada_parte4a2.md",
+          "dir": false,
+          "c": [],
+          "d": "Integración de las creaciones gratuitas entre motor e interfaz."
+        },
+        {
+          "n": "PROGRESO_entrada_parte4a3.md",
+          "dir": false,
+          "c": [],
+          "d": "Incorporación de un alias directo al motor."
+        },
+        {
+          "n": "PROGRESO_entrada_parte4a4.md",
+          "dir": false,
+          "c": [],
+          "d": "Registro de limpieza de errores de TypeScript."
+        },
+        {
+          "n": "PROGRESO_entrada_parte4b.md",
+          "dir": false,
+          "c": [],
+          "d": "Ficha del mecha en la pantalla Mis Mechas."
+        },
+        {
+          "n": "PROGRESO_entrada_parte4b2.md",
+          "dir": false,
+          "c": [],
+          "d": "Ajustes para que la pantalla Hangar entre en el viewport."
+        },
+        {
+          "n": "PROGRESO_entrada_parte4b3.md",
+          "dir": false,
+          "c": [],
+          "d": "Vista central de Mis Mechas y scroll limitado a los atributos."
+        },
+        {
+          "n": "PROGRESO_entrada_parte4c.md",
+          "dir": false,
+          "c": [],
+          "d": "Arnés E2E con Playwright y corrección de la ficha en pantallas bajas."
+        },
+        {
+          "n": "PROGRESO_entrada_parte4d1.md",
+          "dir": false,
+          "c": [],
+          "d": "Ajuste de la ficha Mis Mechas según la referencia visual del Hangar."
+        },
+        {
+          "n": "PROGRESO_entrada_parte4d2.md",
+          "dir": false,
+          "c": [],
+          "d": "Ajustes de flechas, aviso, panel e ítem del menú lateral."
+        },
+        {
+          "n": "PROGRESO_entrada_parte4d3.md",
+          "dir": false,
+          "c": [],
+          "d": "Incorporación del logo en la navbar y del usuario en las pantallas."
+        },
+        {
+          "n": "PROGRESO_entrada_parte4d4.md",
+          "dir": false,
+          "c": [],
+          "d": "Incorporación de iconos al menú lateral del Hangar."
+        },
+        {
+          "n": "PROGRESO_entrada_parte4d5.md",
+          "dir": false,
+          "c": [],
+          "d": "Ajustes del fondo del Hangar y de la escena central del mecha."
+        },
+        {
+          "n": "PROGRESO_entrada_parte4e1.md",
+          "dir": false,
+          "c": [],
+          "d": "Aplicación del layout ajustado al viewport en Home y Ciudad."
+        },
+        {
+          "n": "PROGRESO_entrada_parte4e2.md",
+          "dir": false,
+          "c": [],
+          "d": "Aplicación del layout ajustado al viewport en Fábrica, Perfil y placeholders."
+        },
+        {
+          "n": "PROGRESO_entrada_parte5a.md",
+          "dir": false,
+          "c": [],
+          "d": "Esqueleto de Crear Mecha y su primer paso, Diseño."
+        },
+        {
+          "n": "PROGRESO_entrada_verificacion1.md",
+          "dir": false,
+          "c": [],
+          "d": "Registro de verificación del cliente con pruebas end-to-end."
+        },
+        {
+          "n": "PROMPT_RETOMAR.md",
+          "dir": false,
+          "c": [],
+          "d": "Guía para retomar el trabajo del proyecto en una sesión nueva."
+        },
+        {
+          "n": "protocolo_ia_mechas.md",
+          "dir": false,
+          "c": [],
+          "d": "Protocolo para evaluar la creación de mechas con IA, incluida la alternativa de ensamblado 2D por piezas."
+        },
+        {
+          "n": "README.md",
+          "dir": false,
+          "c": [],
+          "d": "Resumen del juego, del motor de combate, sus pendientes y las decisiones técnicas vigentes."
+        },
+        {
+          "n": "tree.md",
+          "dir": false,
+          "c": [],
+          "d": "Árbol del repositorio en formato de texto."
+        }
+      ],
+      "d": "Documentación: reglas de trabajo, diseño del juego, registro de progreso y experimento 1B."
     },
     {
-     "n": "descripcion_archivos.md",
-     "dir": false,
-     "c": [],
-     "d": "Este inventario con una descripción breve por archivo."
+      "n": "packages",
+      "dir": true,
+      "c": [
+        {
+          "n": "client",
+          "dir": true,
+          "c": [
+            {
+              "n": "src",
+              "dir": true,
+              "c": [
+                {
+                  "n": "app",
+                  "dir": true,
+                  "c": [
+                    {
+                      "n": "app.tsx",
+                      "dir": false,
+                      "c": [],
+                      "d": "Componente raíz de la aplicación y contenedor de navegación."
+                    },
+                    {
+                      "n": "routes.ts",
+                      "dir": false,
+                      "c": [],
+                      "d": "Definición de las rutas y pantallas disponibles."
+                    }
+                  ],
+                  "d": "Directorio de archivos del proyecto.",
+                  "i": true
+                },
+                {
+                  "n": "screens",
+                  "dir": true,
+                  "c": [
+                    {
+                      "n": "city",
+                      "dir": true,
+                      "c": [
+                        {
+                          "n": "city-screen.tsx",
+                          "dir": false,
+                          "c": [],
+                          "d": "Pantalla Ciudad con accesos a sus secciones."
+                        },
+                        {
+                          "n": "public-profile-modal.tsx",
+                          "dir": false,
+                          "c": [],
+                          "d": "Modal con la vista del perfil público de un jugador."
+                        }
+                      ],
+                      "d": "Directorio de archivos del proyecto.",
+                      "i": true
+                    },
+                    {
+                      "n": "create-mecha",
+                      "dir": true,
+                      "c": [
+                        {
+                          "n": "create-mecha-data.ts",
+                          "dir": false,
+                          "c": [],
+                          "d": "Datos y opciones que usa el flujo de creación del mecha."
+                        },
+                        {
+                          "n": "create-mecha-screen.tsx",
+                          "dir": false,
+                          "c": [],
+                          "d": "Pantalla que coordina los pasos de Crear Mecha."
+                        },
+                        {
+                          "n": "create-mecha.css",
+                          "dir": false,
+                          "c": [],
+                          "d": "Estilos específicos del flujo Crear Mecha."
+                        },
+                        {
+                          "n": "create-summary.tsx",
+                          "dir": false,
+                          "c": [],
+                          "d": "Resumen de los datos y atributos del mecha en creación."
+                        },
+                        {
+                          "n": "design-step.tsx",
+                          "dir": false,
+                          "c": [],
+                          "d": "Contenido del paso Diseño del constructor."
+                        },
+                        {
+                          "n": "mecha-preview.tsx",
+                          "dir": false,
+                          "c": [],
+                          "d": "Vista previa visual del diseño del mecha."
+                        },
+                        {
+                          "n": "step-tabs.tsx",
+                          "dir": false,
+                          "c": [],
+                          "d": "Pestañas o indicadores de los pasos del constructor."
+                        }
+                      ],
+                      "d": "Directorio de archivos del proyecto.",
+                      "i": true
+                    },
+                    {
+                      "n": "factory",
+                      "dir": true,
+                      "c": [
+                        {
+                          "n": "factory-screen.tsx",
+                          "dir": false,
+                          "c": [],
+                          "d": "Pantalla Fábrica y presentación de sus servicios."
+                        }
+                      ],
+                      "d": "Directorio de archivos del proyecto.",
+                      "i": true
+                    },
+                    {
+                      "n": "hangar",
+                      "dir": true,
+                      "c": [
+                        {
+                          "n": "my-mechas",
+                          "dir": true,
+                          "c": [
+                            {
+                              "n": "mecha-ficha.css",
+                              "dir": false,
+                              "c": [],
+                              "d": "Estilos de la ficha de un mecha."
+                            },
+                            {
+                              "n": "mecha-ficha.tsx",
+                              "dir": false,
+                              "c": [],
+                              "d": "Ficha con información y atributos del mecha seleccionado."
+                            },
+                            {
+                              "n": "mecha-fixtures.ts",
+                              "dir": false,
+                              "c": [],
+                              "d": "Datos de prueba de mechas usados por la interfaz."
+                            },
+                            {
+                              "n": "mecha-stage.tsx",
+                              "dir": false,
+                              "c": [],
+                              "d": "Escenario o vista central donde se presenta el mecha."
+                            },
+                            {
+                              "n": "mecha-summary.ts",
+                              "dir": false,
+                              "c": [],
+                              "d": "Funciones para resumir o derivar información de un mecha."
+                            },
+                            {
+                              "n": "my-mechas-section.tsx",
+                              "dir": false,
+                              "c": [],
+                              "d": "Sección del Hangar para recorrer y gestionar Mis Mechas."
+                            },
+                            {
+                              "n": "my-mechas.css",
+                              "dir": false,
+                              "c": [],
+                              "d": "Estilos de la sección Mis Mechas."
+                            }
+                          ],
+                          "d": "Directorio de archivos del proyecto.",
+                          "i": true
+                        },
+                        {
+                          "n": "hangar-scene.css",
+                          "dir": false,
+                          "c": [],
+                          "d": "Estilos de la escena central del Hangar."
+                        },
+                        {
+                          "n": "hangar-screen.tsx",
+                          "dir": false,
+                          "c": [],
+                          "d": "Pantalla principal del Hangar y sus secciones."
+                        }
+                      ],
+                      "d": "Directorio de archivos del proyecto.",
+                      "i": true
+                    },
+                    {
+                      "n": "home",
+                      "dir": true,
+                      "c": [
+                        {
+                          "n": "home-screen.tsx",
+                          "dir": false,
+                          "c": [],
+                          "d": "Pantalla principal con los accesos centrales del juego."
+                        }
+                      ],
+                      "d": "Directorio de archivos del proyecto.",
+                      "i": true
+                    },
+                    {
+                      "n": "profile",
+                      "dir": true,
+                      "c": [
+                        {
+                          "n": "personal-profile-screen.tsx",
+                          "dir": false,
+                          "c": [],
+                          "d": "Pantalla de perfil personal y edición de sus datos."
+                        }
+                      ],
+                      "d": "Directorio de archivos del proyecto.",
+                      "i": true
+                    }
+                  ],
+                  "d": "Pantallas del cliente (Ciudad, Crear Mecha, Fábrica, Hangar, Home, Perfil)."
+                },
+                {
+                  "n": "styles",
+                  "dir": true,
+                  "c": [
+                    {
+                      "n": "fonts.ts",
+                      "dir": false,
+                      "c": [],
+                      "d": "Declaración y carga de las fuentes tipográficas de la interfaz."
+                    },
+                    {
+                      "n": "global.css",
+                      "dir": false,
+                      "c": [],
+                      "d": "Estilos globales y reglas base de la aplicación."
+                    }
+                  ],
+                  "d": "Fuentes, tokens de diseño y estilos globales."
+                },
+                {
+                  "n": "ui",
+                  "dir": true,
+                  "c": [
+                    {
+                      "n": "brand-logo.tsx",
+                      "dir": false,
+                      "c": [],
+                      "d": "Componente del logotipo de Rivellon."
+                    },
+                    {
+                      "n": "button-link.tsx",
+                      "dir": false,
+                      "c": [],
+                      "d": "Componente reutilizable de enlace con apariencia de botón."
+                    },
+                    {
+                      "n": "button.tsx",
+                      "dir": false,
+                      "c": [],
+                      "d": "Componente reutilizable de botón."
+                    },
+                    {
+                      "n": "card-link.tsx",
+                      "dir": false,
+                      "c": [],
+                      "d": "Componente de tarjeta que funciona como enlace de navegación."
+                    },
+                    {
+                      "n": "icons.tsx",
+                      "dir": false,
+                      "c": [],
+                      "d": "Componentes de iconos de interfaz."
+                    },
+                    {
+                      "n": "modal.tsx",
+                      "dir": false,
+                      "c": [],
+                      "d": "Estructura reutilizable para ventanas modales."
+                    },
+                    {
+                      "n": "notice.css",
+                      "dir": false,
+                      "c": [],
+                      "d": "Estilos de las notificaciones de interfaz."
+                    },
+                    {
+                      "n": "notice.tsx",
+                      "dir": false,
+                      "c": [],
+                      "d": "Componente de notificación o aviso temporal."
+                    },
+                    {
+                      "n": "panel.tsx",
+                      "dir": false,
+                      "c": [],
+                      "d": "Componente reutilizable de panel."
+                    },
+                    {
+                      "n": "placeholder-screen.tsx",
+                      "dir": false,
+                      "c": [],
+                      "d": "Pantalla provisional para secciones todavía no implementadas."
+                    },
+                    {
+                      "n": "screen-header.tsx",
+                      "dir": false,
+                      "c": [],
+                      "d": "Cabecera compartida de las pantallas."
+                    },
+                    {
+                      "n": "screen.css",
+                      "dir": false,
+                      "c": [],
+                      "d": "Estilos comunes de composición y tamaño de pantalla."
+                    },
+                    {
+                      "n": "ui.css",
+                      "dir": false,
+                      "c": [],
+                      "d": "Estilos compartidos de los componentes de interfaz."
+                    },
+                    {
+                      "n": "user-chip.tsx",
+                      "dir": false,
+                      "c": [],
+                      "d": "Componente compacto de identidad del usuario."
+                    }
+                  ],
+                  "d": "Componentes de interfaz reutilizables."
+                },
+                {
+                  "n": "main.tsx",
+                  "dir": false,
+                  "c": [],
+                  "d": "Punto de entrada React; monta la aplicación y sus estilos globales."
+                }
+              ],
+              "d": "Código fuente del cliente: app, pantallas, estilos y componentes de interfaz."
+            },
+            {
+              "n": "index.html",
+              "dir": false,
+              "c": [],
+              "d": "Documento HTML de entrada servido por Vite para el cliente."
+            },
+            {
+              "n": "package.json",
+              "dir": false,
+              "c": [],
+              "d": "Dependencias, metadatos y scripts npm del cliente web."
+            },
+            {
+              "n": "tsconfig.json",
+              "dir": false,
+              "c": [],
+              "d": "Opciones de compilación y comprobación TypeScript del cliente."
+            },
+            {
+              "n": "vite.config.ts",
+              "dir": false,
+              "c": [],
+              "d": "Configuración de Vite para desarrollo y compilación del cliente."
+            }
+          ],
+          "d": "Interfaz web principal (React 18, Vite 5, react-router); en construcción."
+        },
+        {
+          "n": "engine",
+          "dir": true,
+          "c": [
+            {
+              "n": "src",
+              "dir": true,
+              "c": [
+                {
+                  "n": "combat.ts",
+                  "dir": false,
+                  "c": [],
+                  "d": "Creación del estado de combate y aplicación de acciones y reglas."
+                },
+                {
+                  "n": "hex.ts",
+                  "dir": false,
+                  "c": [],
+                  "d": "Operaciones y utilidades de coordenadas para el tablero hexagonal."
+                },
+                {
+                  "n": "index.ts",
+                  "dir": false,
+                  "c": [],
+                  "d": "Exportaciones públicas del paquete de motor."
+                },
+                {
+                  "n": "rng.ts",
+                  "dir": false,
+                  "c": [],
+                  "d": "Generador pseudoaleatorio determinista usado por el combate."
+                },
+                {
+                  "n": "rules.ts",
+                  "dir": false,
+                  "c": [],
+                  "d": "Constantes provisionales y parámetros de las reglas de combate."
+                },
+                {
+                  "n": "types.ts",
+                  "dir": false,
+                  "c": [],
+                  "d": "Tipos compartidos para estados, acciones, eventos y unidades."
+                }
+              ],
+              "d": "Código fuente del motor de combate."
+            },
+            {
+              "n": "test",
+              "dir": true,
+              "c": [
+                {
+                  "n": "combat.test.ts",
+                  "dir": false,
+                  "c": [],
+                  "d": "Pruebas unitarias del comportamiento del motor de combate."
+                }
+              ],
+              "d": "Pruebas del motor."
+            },
+            {
+              "n": "package.json",
+              "dir": false,
+              "c": [],
+              "d": "Dependencias, metadatos y scripts npm del motor."
+            },
+            {
+              "n": "tsconfig.json",
+              "dir": false,
+              "c": [],
+              "d": "Opciones de TypeScript para compilar y validar el motor."
+            }
+          ],
+          "d": "Reglas del combate, puras y deterministas (TypeScript, Vitest), y sus pruebas."
+        }
+      ],
+      "d": "Directorio de archivos del proyecto.",
+      "i": true
     },
     {
-     "n": "documento_conceptual_juego_robots_unificado (1).md",
-     "dir": false,
-     "c": [],
-     "d": "Fuente de verdad del diseño (v0.7, unifica las versiones 0.1 a 0.6). Los demás docs lo citan sin el «(1)»."
+      "n": "root-files-description",
+      "dir": true,
+      "c": [
+        {
+          "n": "build.py",
+          "dir": false,
+          "c": [],
+          "d": "Genera `MAPA.md` e `index.html` a partir de `mapa.json`."
+        },
+        {
+          "n": "index.html",
+          "dir": false,
+          "c": [],
+          "d": "Vista web navegable del mapa de archivos, con filtro y opción de copiar."
+        },
+        {
+          "n": "mapa.json",
+          "dir": false,
+          "c": [],
+          "d": "Datos estructurados de rutas, descripciones y agrupaciones usados por el generador."
+        },
+        {
+          "n": "MAPA.md",
+          "dir": false,
+          "c": [],
+          "d": "Mapa descriptivo del proyecto generado desde `mapa.json`."
+        },
+        {
+          "n": "README.md",
+          "dir": false,
+          "c": [],
+          "d": "Presentación del generador y de los archivos del mapa del proyecto."
+        }
+      ],
+      "d": "Repositorio de esta web (mapa del proyecto); tiene su propio .git."
     },
     {
-     "n": "experimento1b_mecha1.md",
-     "dir": false,
-     "c": [],
-     "d": "Experimento 1B, mecha 1 «Guardián Urbano» (2D por capas): datos del pedido y prompts listos para copiar."
+      "n": "skills",
+      "dir": true,
+      "c": [
+        {
+          "n": "rivellon-mapa.zip",
+          "dir": false,
+          "c": [],
+          "d": "Archivo comprimido; el mapa enumera el archivo sin expandir su contenido.",
+          "i": true
+        }
+      ],
+      "d": "Recursos auxiliares; no se expande el contenido de archivos comprimidos.",
+      "i": true
     },
     {
-     "n": "experimento1b_mecha2.md",
-     "dir": false,
-     "c": [],
-     "d": "Experimento 1B, mecha 2: resultados con silueta base; scripts e imágenes en tools/ensamblado-2d."
+      "n": "tests-e2e",
+      "dir": true,
+      "c": [
+        {
+          "n": "stubs",
+          "dir": true,
+          "c": [
+            {
+              "n": "empty.ts",
+              "dir": false,
+              "c": [],
+              "d": "Módulo vacío usado como sustituto durante la compilación del arnés."
+            },
+            {
+              "n": "react-router-dom.tsx",
+              "dir": false,
+              "c": [],
+              "d": "Sustituto de React Router para aislar las pantallas en el arnés."
+            }
+          ],
+          "d": "Reemplazos simulados usados por el arnés."
+        },
+        {
+          "n": "build.mjs",
+          "dir": false,
+          "c": [],
+          "d": "Prepara y empaqueta el arnés de pruebas end-to-end con sus stubs."
+        },
+        {
+          "n": "e2e-pantallas.py",
+          "dir": false,
+          "c": [],
+          "d": "Prueba pantallas reales del cliente y sus restricciones de viewport e interacción."
+        },
+        {
+          "n": "e2e.py",
+          "dir": false,
+          "c": [],
+          "d": "Prueba end-to-end del flujo usando el arnés con componentes simulados."
+        },
+        {
+          "n": "entry.tsx",
+          "dir": false,
+          "c": [],
+          "d": "Punto de entrada React del arnés de pruebas."
+        },
+        {
+          "n": "linea-produccion.zip",
+          "dir": false,
+          "c": [],
+          "d": "Copia comprimida de tools/linea-produccion."
+        }
+      ],
+      "d": "Pruebas end-to-end (Playwright): verificación visual de pantallas y de flujo."
     },
     {
-     "n": "experimento1b_mecha3a5.md",
-     "dir": false,
-     "c": [],
-     "d": "Experimento 1B, mechas 3 a 5: resultados de la primera corrida (diseño y silueta de cada uno)."
+      "n": "tools",
+      "dir": true,
+      "c": [
+        {
+          "n": "demo-combate",
+          "dir": true,
+          "c": [
+            {
+              "n": "assets",
+              "dir": true,
+              "c": [
+                {
+                  "n": "hoja_poses_lobo.png",
+                  "dir": false,
+                  "c": [],
+                  "d": "Hoja de sprites con poses del mecha lobo para la animación."
+                },
+                {
+                  "n": "mecha_lobo.json",
+                  "dir": false,
+                  "c": [],
+                  "d": "Metadatos de las poses y de su orientación nativa."
+                },
+                {
+                  "n": "mecha_lobo.png",
+                  "dir": false,
+                  "c": [],
+                  "d": "Imagen del mecha lobo en pose de reposo."
+                }
+              ],
+              "d": "Directorio de archivos del proyecto.",
+              "i": true
+            },
+            {
+              "n": "css",
+              "dir": true,
+              "c": [
+                {
+                  "n": "demo.css",
+                  "dir": false,
+                  "c": [],
+                  "d": "Presentación visual de la demo y sus controles."
+                }
+              ],
+              "d": "Directorio de archivos del proyecto.",
+              "i": true
+            },
+            {
+              "n": "js",
+              "dir": true,
+              "c": [
+                {
+                  "n": "animaciones.js",
+                  "dir": false,
+                  "c": [],
+                  "d": "Animaciones de movimiento, ataque, defensa, daño y derrota."
+                },
+                {
+                  "n": "escena.js",
+                  "dir": false,
+                  "c": [],
+                  "d": "Dibujo del tablero y de los mechas en el canvas."
+                },
+                {
+                  "n": "main.js",
+                  "dir": false,
+                  "c": [],
+                  "d": "Inicialización de la demo y conexión de controles y animaciones."
+                },
+                {
+                  "n": "motor-falso.js",
+                  "dir": false,
+                  "c": [],
+                  "d": "Simulación simplificada de eventos de combate para la demo."
+                },
+                {
+                  "n": "recorte.js",
+                  "dir": false,
+                  "c": [],
+                  "d": "Recorte de las poses y del fondo de las imágenes de entrada."
+                }
+              ],
+              "d": "Directorio de archivos del proyecto.",
+              "i": true
+            },
+            {
+              "n": "index.html",
+              "dir": false,
+              "c": [],
+              "d": "Página de entrada de la demo de combate."
+            },
+            {
+              "n": "README.md",
+              "dir": false,
+              "c": [],
+              "d": "Instrucciones, flujo y límites de la demo de combate 2D."
+            }
+          ],
+          "d": "Demo de combate 2D con las poses del mecha lobo (experimento 1B)."
+        },
+        {
+          "n": "ensamblado-2d",
+          "dir": true,
+          "c": [
+            {
+              "n": "__pycache__",
+              "dir": true,
+              "c": [
+                {
+                  "n": "ajustar.cpython-312.pyc",
+                  "dir": false,
+                  "c": [],
+                  "d": "Bytecode Python cacheado del módulo `ajustar`."
+                },
+                {
+                  "n": "assemble.cpython-312.pyc",
+                  "dir": false,
+                  "c": [],
+                  "d": "Bytecode Python cacheado del módulo `assemble`."
+                },
+                {
+                  "n": "colocar.cpython-312.pyc",
+                  "dir": false,
+                  "c": [],
+                  "d": "Bytecode Python cacheado del módulo `colocar`."
+                },
+                {
+                  "n": "detectar.cpython-312.pyc",
+                  "dir": false,
+                  "c": [],
+                  "d": "Bytecode Python cacheado del módulo `detectar`."
+                },
+                {
+                  "n": "regiones.cpython-312.pyc",
+                  "dir": false,
+                  "c": [],
+                  "d": "Bytecode Python cacheado del módulo `regiones`."
+                },
+                {
+                  "n": "seg.cpython-312.pyc",
+                  "dir": false,
+                  "c": [],
+                  "d": "Bytecode Python cacheado del módulo `seg`."
+                }
+              ],
+              "d": "Bytecode de Python cacheado; no hace falta versionarlo."
+            },
+            {
+              "n": "mecha2",
+              "dir": true,
+              "c": [
+                {
+                  "n": "entrada",
+                  "dir": true,
+                  "c": [
+                    {
+                      "n": "anclas.json",
+                      "dir": false,
+                      "c": [],
+                      "d": "Coordenadas y parámetros de anclaje de las piezas para el mecha 2."
+                    },
+                    {
+                      "n": "ensamblado_original_modoB.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Ensamblado original de referencia del mecha 2, modo B."
+                    },
+                    {
+                      "n": "hoja_piezas.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Hoja de piezas original que sirve de entrada para el mecha 2."
+                    },
+                    {
+                      "n": "silueta.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Silueta guía original del mecha 2."
+                    }
+                  ],
+                  "d": "Entradas: hoja de piezas, silueta guía y anclas."
+                },
+                {
+                  "n": "piezas",
+                  "dir": true,
+                  "c": [
+                    {
+                      "n": "aux.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Recorte de la pieza auxiliar del mecha 2."
+                    },
+                    {
+                      "n": "head.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Recorte de la cabeza del mecha 2."
+                    },
+                    {
+                      "n": "left_arm.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Recorte del brazo izquierdo del mecha 2."
+                    },
+                    {
+                      "n": "legs.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Recorte de las piernas del mecha 2."
+                    },
+                    {
+                      "n": "piezas.json",
+                      "dir": false,
+                      "c": [],
+                      "d": "Metadatos de dimensiones y anclajes de las piezas del mecha 2."
+                    },
+                    {
+                      "n": "right_arm.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Recorte del brazo derecho del mecha 2."
+                    },
+                    {
+                      "n": "torso.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Recorte del torso del mecha 2."
+                    }
+                  ],
+                  "d": "Recortes de las piezas y sus metadatos (piezas.json)."
+                },
+                {
+                  "n": "salida",
+                  "dir": true,
+                  "c": [
+                    {
+                      "n": "debug_DR.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Vista de depuración del recorte DR del mecha 2."
+                    },
+                    {
+                      "n": "ia_resultado.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Resultado generado por IA para el mecha 2, antes del ajuste de color."
+                    },
+                    {
+                      "n": "ia_resultado_color.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Resultado de IA del mecha 2 después de ajustar el color."
+                    },
+                    {
+                      "n": "metricas.json",
+                      "dir": false,
+                      "c": [],
+                      "d": "Métricas generales del ensamblado del mecha 2."
+                    },
+                    {
+                      "n": "metricas_C.json",
+                      "dir": false,
+                      "c": [],
+                      "d": "Métricas del ensamblado por regiones, técnica C, del mecha 2."
+                    },
+                    {
+                      "n": "metricas_D.json",
+                      "dir": false,
+                      "c": [],
+                      "d": "Métricas del ensamblado de piezas sin deformación, técnica D, del mecha 2."
+                    },
+                    {
+                      "n": "metricas_DR.json",
+                      "dir": false,
+                      "c": [],
+                      "d": "Métricas del ensamblado con recorte, técnica DR, del mecha 2."
+                    },
+                    {
+                      "n": "metricas_fijos.json",
+                      "dir": false,
+                      "c": [],
+                      "d": "Métricas de referencia del mecha 2 usando parámetros fijos."
+                    },
+                    {
+                      "n": "out_D.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Resultado visual del ensamblado D del mecha 2."
+                    },
+                    {
+                      "n": "out_DR.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Resultado visual del ensamblado DR del mecha 2."
+                    },
+                    {
+                      "n": "overlay.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Superposición de piezas y silueta para el mecha 2."
+                    },
+                    {
+                      "n": "overlay_D.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Superposición de diagnóstico del ensamblado D del mecha 2."
+                    }
+                  ],
+                  "d": "Resultados del ensamblado (out_D, out_DR, ia_resultado), superposiciones y métricas."
+                }
+              ],
+              "d": "Datos de entrada, piezas y resultados experimentales del mecha2.",
+              "i": true
+            },
+            {
+              "n": "mecha3",
+              "dir": true,
+              "c": [
+                {
+                  "n": "entrada",
+                  "dir": true,
+                  "c": [
+                    {
+                      "n": "anclas.json",
+                      "dir": false,
+                      "c": [],
+                      "d": "Coordenadas y parámetros de anclaje de las piezas para el mecha 3."
+                    },
+                    {
+                      "n": "hoja_piezas.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Hoja de piezas original que sirve de entrada para el mecha 3."
+                    },
+                    {
+                      "n": "silueta.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Silueta guía original del mecha 3."
+                    }
+                  ],
+                  "d": "Entradas: hoja de piezas, silueta guía y anclas."
+                },
+                {
+                  "n": "piezas",
+                  "dir": true,
+                  "c": [
+                    {
+                      "n": "aux.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Recorte de la pieza auxiliar del mecha 3."
+                    },
+                    {
+                      "n": "head.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Recorte de la cabeza del mecha 3."
+                    },
+                    {
+                      "n": "left_arm.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Recorte del brazo izquierdo del mecha 3."
+                    },
+                    {
+                      "n": "legs.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Recorte de las piernas del mecha 3."
+                    },
+                    {
+                      "n": "piezas.json",
+                      "dir": false,
+                      "c": [],
+                      "d": "Metadatos de dimensiones y anclajes de las piezas del mecha 3."
+                    },
+                    {
+                      "n": "right_arm.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Recorte del brazo derecho del mecha 3."
+                    },
+                    {
+                      "n": "torso.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Recorte del torso del mecha 3."
+                    }
+                  ],
+                  "d": "Recortes de las piezas y sus metadatos (piezas.json)."
+                },
+                {
+                  "n": "salida",
+                  "dir": true,
+                  "c": [
+                    {
+                      "n": "debug_DR.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Vista de depuración del recorte DR del mecha 3."
+                    },
+                    {
+                      "n": "ia_resultado.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Resultado generado por IA para el mecha 3, antes del ajuste de color."
+                    },
+                    {
+                      "n": "ia_resultado_color.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Resultado de IA del mecha 3 después de ajustar el color."
+                    },
+                    {
+                      "n": "metricas.json",
+                      "dir": false,
+                      "c": [],
+                      "d": "Métricas generales del ensamblado del mecha 3."
+                    },
+                    {
+                      "n": "metricas_C.json",
+                      "dir": false,
+                      "c": [],
+                      "d": "Métricas del ensamblado por regiones, técnica C, del mecha 3."
+                    },
+                    {
+                      "n": "metricas_D.json",
+                      "dir": false,
+                      "c": [],
+                      "d": "Métricas del ensamblado de piezas sin deformación, técnica D, del mecha 3."
+                    },
+                    {
+                      "n": "metricas_DR.json",
+                      "dir": false,
+                      "c": [],
+                      "d": "Métricas del ensamblado con recorte, técnica DR, del mecha 3."
+                    },
+                    {
+                      "n": "out_D.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Resultado visual del ensamblado D del mecha 3."
+                    },
+                    {
+                      "n": "out_DR.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Resultado visual del ensamblado DR del mecha 3."
+                    },
+                    {
+                      "n": "overlay.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Superposición de piezas y silueta para el mecha 3."
+                    },
+                    {
+                      "n": "overlay_D.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Superposición de diagnóstico del ensamblado D del mecha 3."
+                    }
+                  ],
+                  "d": "Resultados del ensamblado (out_D, out_DR, ia_resultado), superposiciones y métricas."
+                }
+              ],
+              "d": "Datos de entrada, piezas y resultados experimentales del mecha3.",
+              "i": true
+            },
+            {
+              "n": "mecha4",
+              "dir": true,
+              "c": [
+                {
+                  "n": "entrada",
+                  "dir": true,
+                  "c": [
+                    {
+                      "n": "anclas.json",
+                      "dir": false,
+                      "c": [],
+                      "d": "Coordenadas y parámetros de anclaje de las piezas para el mecha 4."
+                    },
+                    {
+                      "n": "hoja_piezas.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Hoja de piezas original que sirve de entrada para el mecha 4."
+                    },
+                    {
+                      "n": "silueta.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Silueta guía original del mecha 4."
+                    }
+                  ],
+                  "d": "Entradas: hoja de piezas, silueta guía y anclas."
+                },
+                {
+                  "n": "piezas",
+                  "dir": true,
+                  "c": [
+                    {
+                      "n": "aux.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Recorte de la pieza auxiliar del mecha 4."
+                    },
+                    {
+                      "n": "head.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Recorte de la cabeza del mecha 4."
+                    },
+                    {
+                      "n": "left_arm.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Recorte del brazo izquierdo del mecha 4."
+                    },
+                    {
+                      "n": "legs.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Recorte de las piernas del mecha 4."
+                    },
+                    {
+                      "n": "piezas.json",
+                      "dir": false,
+                      "c": [],
+                      "d": "Metadatos de dimensiones y anclajes de las piezas del mecha 4."
+                    },
+                    {
+                      "n": "right_arm.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Recorte del brazo derecho del mecha 4."
+                    },
+                    {
+                      "n": "torso.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Recorte del torso del mecha 4."
+                    }
+                  ],
+                  "d": "Recortes de las piezas y sus metadatos (piezas.json)."
+                },
+                {
+                  "n": "salida",
+                  "dir": true,
+                  "c": [
+                    {
+                      "n": "debug_DR.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Vista de depuración del recorte DR del mecha 4."
+                    },
+                    {
+                      "n": "ia_resultado.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Resultado generado por IA para el mecha 4, antes del ajuste de color."
+                    },
+                    {
+                      "n": "ia_resultado_color.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Resultado de IA del mecha 4 después de ajustar el color."
+                    },
+                    {
+                      "n": "metricas.json",
+                      "dir": false,
+                      "c": [],
+                      "d": "Métricas generales del ensamblado del mecha 4."
+                    },
+                    {
+                      "n": "metricas_C.json",
+                      "dir": false,
+                      "c": [],
+                      "d": "Métricas del ensamblado por regiones, técnica C, del mecha 4."
+                    },
+                    {
+                      "n": "metricas_D.json",
+                      "dir": false,
+                      "c": [],
+                      "d": "Métricas del ensamblado de piezas sin deformación, técnica D, del mecha 4."
+                    },
+                    {
+                      "n": "metricas_DR.json",
+                      "dir": false,
+                      "c": [],
+                      "d": "Métricas del ensamblado con recorte, técnica DR, del mecha 4."
+                    },
+                    {
+                      "n": "out_DR.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Resultado visual del ensamblado DR del mecha 4."
+                    },
+                    {
+                      "n": "overlay.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Superposición de piezas y silueta para el mecha 4."
+                    }
+                  ],
+                  "d": "Resultados del ensamblado (out_D, out_DR, ia_resultado), superposiciones y métricas."
+                }
+              ],
+              "d": "Datos de entrada, piezas y resultados experimentales del mecha4.",
+              "i": true
+            },
+            {
+              "n": "mecha5",
+              "dir": true,
+              "c": [
+                {
+                  "n": "entrada",
+                  "dir": true,
+                  "c": [
+                    {
+                      "n": "anclas.json",
+                      "dir": false,
+                      "c": [],
+                      "d": "Coordenadas y parámetros de anclaje de las piezas para el mecha 5."
+                    },
+                    {
+                      "n": "hoja_piezas.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Hoja de piezas original que sirve de entrada para el mecha 5."
+                    },
+                    {
+                      "n": "silueta.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Silueta guía original del mecha 5."
+                    }
+                  ],
+                  "d": "Entradas: hoja de piezas, silueta guía y anclas."
+                },
+                {
+                  "n": "piezas",
+                  "dir": true,
+                  "c": [
+                    {
+                      "n": "aux.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Recorte de la pieza auxiliar del mecha 5."
+                    },
+                    {
+                      "n": "head.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Recorte de la cabeza del mecha 5."
+                    },
+                    {
+                      "n": "left_arm.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Recorte del brazo izquierdo del mecha 5."
+                    },
+                    {
+                      "n": "legs.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Recorte de las piernas del mecha 5."
+                    },
+                    {
+                      "n": "piezas.json",
+                      "dir": false,
+                      "c": [],
+                      "d": "Metadatos de dimensiones y anclajes de las piezas del mecha 5."
+                    },
+                    {
+                      "n": "right_arm.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Recorte del brazo derecho del mecha 5."
+                    },
+                    {
+                      "n": "torso.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Recorte del torso del mecha 5."
+                    }
+                  ],
+                  "d": "Recortes de las piezas y sus metadatos (piezas.json)."
+                },
+                {
+                  "n": "salida",
+                  "dir": true,
+                  "c": [
+                    {
+                      "n": "debug_DR.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Vista de depuración del recorte DR del mecha 5."
+                    },
+                    {
+                      "n": "ia_resultado.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Resultado generado por IA para el mecha 5, antes del ajuste de color."
+                    },
+                    {
+                      "n": "ia_resultado_color.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Resultado de IA del mecha 5 después de ajustar el color."
+                    },
+                    {
+                      "n": "metricas.json",
+                      "dir": false,
+                      "c": [],
+                      "d": "Métricas generales del ensamblado del mecha 5."
+                    },
+                    {
+                      "n": "metricas_C.json",
+                      "dir": false,
+                      "c": [],
+                      "d": "Métricas del ensamblado por regiones, técnica C, del mecha 5."
+                    },
+                    {
+                      "n": "metricas_D.json",
+                      "dir": false,
+                      "c": [],
+                      "d": "Métricas del ensamblado de piezas sin deformación, técnica D, del mecha 5."
+                    },
+                    {
+                      "n": "metricas_DR.json",
+                      "dir": false,
+                      "c": [],
+                      "d": "Métricas del ensamblado con recorte, técnica DR, del mecha 5."
+                    },
+                    {
+                      "n": "out_D.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Resultado visual del ensamblado D del mecha 5."
+                    },
+                    {
+                      "n": "out_DR.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Resultado visual del ensamblado DR del mecha 5."
+                    },
+                    {
+                      "n": "overlay.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Superposición de piezas y silueta para el mecha 5."
+                    },
+                    {
+                      "n": "overlay_D.png",
+                      "dir": false,
+                      "c": [],
+                      "d": "Superposición de diagnóstico del ensamblado D del mecha 5."
+                    }
+                  ],
+                  "d": "Resultados del ensamblado (out_D, out_DR, ia_resultado), superposiciones y métricas."
+                }
+              ],
+              "d": "Datos de entrada, piezas y resultados experimentales del mecha5.",
+              "i": true
+            },
+            {
+              "n": "ensamblar.py",
+              "dir": false,
+              "c": [],
+              "d": "Ensamblado experimental por regiones de silueta (técnica C)."
+            },
+            {
+              "n": "exportar.py",
+              "dir": false,
+              "c": [],
+              "d": "Recorta las piezas de una hoja y exporta sus imágenes y metadatos."
+            },
+            {
+              "n": "mecha2.zip",
+              "dir": false,
+              "c": [],
+              "d": "Archivo comprimido; el mapa enumera el archivo sin expandir su contenido.",
+              "i": true
+            },
+            {
+              "n": "mecha3.zip",
+              "dir": false,
+              "c": [],
+              "d": "Archivo comprimido; el mapa enumera el archivo sin expandir su contenido.",
+              "i": true
+            },
+            {
+              "n": "mecha4.zip",
+              "dir": false,
+              "c": [],
+              "d": "Archivo comprimido; el mapa enumera el archivo sin expandir su contenido.",
+              "i": true
+            },
+            {
+              "n": "mecha5.zip",
+              "dir": false,
+              "c": [],
+              "d": "Archivo comprimido; el mapa enumera el archivo sin expandir su contenido.",
+              "i": true
+            },
+            {
+              "n": "overlay.py",
+              "dir": false,
+              "c": [],
+              "d": "Genera una superposición visual para comparar piezas y silueta."
+            },
+            {
+              "n": "preparar_ia.py",
+              "dir": false,
+              "c": [],
+              "d": "Prepara imágenes y datos para el paso experimental de IA."
+            },
+            {
+              "n": "prompt_hoja.txt",
+              "dir": false,
+              "c": [],
+              "d": "Prompt experimental para generar la hoja de piezas del mecha."
+            },
+            {
+              "n": "prompt_silueta.txt",
+              "dir": false,
+              "c": [],
+              "d": "Prompt experimental para generar la silueta guía del mecha."
+            },
+            {
+              "n": "README.md",
+              "dir": false,
+              "c": [],
+              "d": "Guía del experimento, scripts disponibles, entradas, resultados y limitaciones."
+            }
+          ],
+          "d": "Scripts Python provisorios del experimento 1B (ensamblado sobre silueta, métricas); no son código del juego."
+        },
+        {
+          "n": "linea-produccion",
+          "dir": true,
+          "c": [
+            {
+              "n": "css",
+              "dir": true,
+              "c": [
+                {
+                  "n": "linea.css",
+                  "dir": false,
+                  "c": [],
+                  "d": "Estilos de la página de la línea de producción."
+                }
+              ],
+              "d": "Directorio de archivos del proyecto.",
+              "i": true
+            },
+            {
+              "n": "js",
+              "dir": true,
+              "c": [
+                {
+                  "n": "color.js",
+                  "dir": false,
+                  "c": [],
+                  "d": "Corrector de color y brillo: iguala una imagen con transparencia a la hoja de piezas (Lab, solo píxeles opacos)."
+                },
+                {
+                  "n": "main.js",
+                  "dir": false,
+                  "c": [],
+                  "d": "Lógica principal de la interfaz y del flujo de trabajo."
+                },
+                {
+                  "n": "panel-recorte.js",
+                  "dir": false,
+                  "c": [],
+                  "d": "Panel común de los pasos de recorte: elegir una imagen, recortar N sprites, corregir color opcional y descargarlos."
+                },
+                {
+                  "n": "prompts.js",
+                  "dir": false,
+                  "c": [],
+                  "d": "Carga y composición de las plantillas de prompts."
+                },
+                {
+                  "n": "recortar.js",
+                  "dir": false,
+                  "c": [],
+                  "d": "Pasos que recortan el mecha ensamblado (reposo) y la hoja de poses (carga, golpe, guardia, daño, derrotado)."
+                },
+                {
+                  "n": "recorte.js",
+                  "dir": false,
+                  "c": [],
+                  "d": "Copia del recorte de fondo gris de demo-combate; devuelve cada pieza como imagen con transparencia."
+                },
+                {
+                  "n": "separar.js",
+                  "dir": false,
+                  "c": [],
+                  "d": "Paso que separa las seis piezas de la hoja (usa el panel común de recorte)."
+                },
+                {
+                  "n": "visor.js",
+                  "dir": false,
+                  "c": [],
+                  "d": "Utilidades de interfaz y visualización de los pasos."
+                }
+              ],
+              "d": "Directorio de archivos del proyecto.",
+              "i": true
+            },
+            {
+              "n": "prompts",
+              "dir": true,
+              "c": [
+                {
+                  "n": "prompt_ensamblado.txt",
+                  "dir": false,
+                  "c": [],
+                  "d": "Plantilla para pedir a ChatGPT que ensamble las piezas del mecha."
+                },
+                {
+                  "n": "prompt_hoja.txt",
+                  "dir": false,
+                  "c": [],
+                  "d": "Plantilla para generar una hoja con las piezas separadas del mecha."
+                },
+                {
+                  "n": "prompt_pose_unica.txt",
+                  "dir": false,
+                  "c": [],
+                  "d": "Plantilla para solicitar una pose individual del mecha."
+                },
+                {
+                  "n": "prompt_poses.txt",
+                  "dir": false,
+                  "c": [],
+                  "d": "Plantilla principal para generar una hoja de poses de combate."
+                },
+                {
+                  "n": "prompt_poses_v2.txt",
+                  "dir": false,
+                  "c": [],
+                  "d": "Variante de la plantilla de poses con restricciones de encuadre y consistencia."
+                },
+                {
+                  "n": "prompt_silueta.txt",
+                  "dir": false,
+                  "c": [],
+                  "d": "Plantilla experimental para generar una silueta guía."
+                }
+              ],
+              "d": "Directorio de archivos del proyecto.",
+              "i": true
+            },
+            {
+              "n": "index.html",
+              "dir": false,
+              "c": [],
+              "d": "Página de entrada de la línea de producción de mechas."
+            },
+            {
+              "n": "README.md",
+              "dir": false,
+              "c": [],
+              "d": "Instrucciones y flujo de la herramienta web experimental de prompts."
+            }
+          ],
+          "d": "Web que arma los prompts de la línea de producción de mechas y recorta piezas, mecha y poses en el navegador (experimento 1B)."
+        }
+      ],
+      "d": "Utilidades y recursos experimentales; no forman parte del núcleo del juego."
     },
     {
-     "n": "experimento1b_planilla.xlsx",
-     "dir": false,
-     "c": [],
-     "d": "Planilla de medición del experimento 1B (por pieza, por mecha, silueta, pieza ajena y decisión 3D vs 2D)."
+      "n": ".gitignore",
+      "dir": false,
+      "c": [],
+      "d": "Patrones de archivos y carpetas que Git debe ignorar."
     },
     {
-     "n": "experimento1b_planilla_v2.xlsx",
-     "dir": false,
-     "c": [],
-     "d": "Planilla v2 del circuito actual; reemplaza a la v1 y guarda su histórico."
+      "n": "package-lock.json",
+      "dir": false,
+      "c": [],
+      "d": "Versiones bloqueadas de las dependencias npm instaladas."
     },
     {
-     "n": "experimento1b_tecnicaC.md",
-     "dir": false,
-     "c": [],
-     "d": "Experimento 1B, técnica C: ensamblado por regiones de la silueta (parte 1 de 3)."
+      "n": "package.json",
+      "dir": false,
+      "c": [],
+      "d": "Manifiesto npm raíz; define los workspaces y comandos compartidos."
     },
     {
-     "n": "PROGRESO.md",
-     "dir": false,
-     "c": [],
-     "d": "Índice general de progreso: estado actual, próximo paso exacto y actualizaciones por fecha."
-    },
-    {
-     "n": "PROMPT_RETOMAR.md",
-     "dir": false,
-     "c": [],
-     "d": "Prompt para retomar el proyecto en una sesión nueva: qué es, regla de pedir los archivos del paso y archivos por tipo de tarea."
-    },
-    {
-     "n": "protocolo_ia_mechas.md",
-     "dir": false,
-     "c": [],
-     "d": "Protocolo del experimento de viabilidad: pasar de un boceto hecho por IA a seis piezas que encajen; incluye la variante 2D (§12)."
-    },
-    {
-     "n": "README.md",
-     "dir": false,
-     "c": [],
-     "d": "README de Rivellon: resumen del motor de combate (@rivellon/engine), pendientes, comandos y decisiones por defecto."
-    },
-    {
-     "n": "tree.md",
-     "dir": false,
-     "c": [],
-     "d": "Este mismo árbol del proyecto, en texto."
-    },
-    {
-     "g": true,
-     "p": "PROGRESO_entrada_experimento1b_linea_parte",
-     "d": "Registro de la línea de producción del experimento 1B (partes 1 a 4z7).",
-     "s": [
-      "1",
-      "2",
-      "3a",
-      "3b",
-      "3c",
-      "4a",
-      "4b",
-      "4c",
-      "4d",
-      "4e",
-      "4f",
-      "4g",
-      "4h",
-      "4i",
-      "4j",
-      "4k",
-      "4l",
-      "4m",
-      "4n",
-      "4o",
-      "4q",
-      "4r",
-      "4s",
-      "4t",
-      "4u",
-      "4v",
-      "4w",
-      "4x",
-      "4y",
-      "4z",
-      "4z2",
-      "4z3",
-      "4z4",
-      "4z5",
-      "4z6",
-      "4z7"
-     ],
-     "sd": [
-      "Implementación inicial de la línea web y sus pasos 0 a 2.",
-      "Implementación del paso 3 de la línea: detección de anclas.",
-      "Registro de los pasos 4 y 5 de la línea de producción.",
-      "Registro parcial del paso 7 de la línea de producción.",
-      "Cierre de la parte 3b y registro del paso 6.",
-      "Registro de los scripts de ejecución completa y verificación.",
-      "Registro de la medición de resultados y exportación a CSV.",
-      "Registro de la verificación de la hoja de piezas en el paso 1.",
-      "Ajustes para detectar armas y manos y mejorar las anclas del brazo.",
-      "Ajuste de la detección del torso tomando los hombros como referencia.",
-      "Ajuste de los puntos de hombro hacia los extremos superiores de las hombreras.",
-      "Ajuste del encastre de los brazos mediante el ancho del bíceps.",
-      "Comparación de los bíceps de las piezas con los de la silueta.",
-      "Ajuste de la escala del brazo usando el ancho del bíceps de la silueta.",
-      "Ajuste para igualar el largo de los brazos.",
-      "Ajuste de la posición de la muñeca usando el borde de la muñequera.",
-      "Corrección de orientación del brazo con escudo y su pulgar.",
-      "Alineación de las muñecas de las piezas con las muñecas de la silueta.",
-      "Corrección del encuadre del paso 3 y opción de piernas completas en el paso 4.",
-      "Separación de la validación de pose y color para decidir la corrección del paso 7.",
-      "Espejado automático de un brazo cuando la verificación detecta dos del mismo lado.",
-      "Corrección para conservar en el paso 3 el espejo aplicado en el paso 1.",
-      "Actualización del prompt de silueta para incluir la cabeza.",
-      "Actualización del prompt de ensamblado para corregir brazos desproporcionados.",
-      "Ajustes del lado del escudo y de la detección de muñeca con accesorios.",
-      "Actualización del prompt para exigir apariencia mecánica en las piezas.",
-      "Especificación explícita de la dirección de cada brazo en el prompt.",
-      "Cambio del orden de las piezas para generar los brazos juntos como par espejado.",
-      "Retiro del ensamblado por scripts y delegación del ensamblado a ChatGPT.",
-      "Diseño del prompt para generar poses de animación para el combate en grilla.",
-      "Registro de la hoja de poses aprobada del mecha lobo y del prompt de pose única.",
-      "Variante ajustada del prompt para generar hojas de poses.",
-      "Primera tanda para retirar el prompt de silueta e incorporar separación y recorte.",
-      "Segunda tanda: paso del navegador que separa las seis piezas de la hoja con fondo transparente.",
-      "Tercera tanda: pasos de navegador para recortar el mecha ensamblado y las poses, y módulo común de recorte.",
-      "Corrector de color y brillo de los pasos de recorte, igualado a la hoja de piezas."
-     ]
-    },
-    {
-     "g": true,
-     "p": "PROGRESO_entrada_experimento1b_",
-     "d": "Registro del experimento 1B fuera de la línea: mechas 2 a 5, planillas, paso de IA, técnicas C y D, demo de combate.",
-     "s": [
-      "demo_combate",
-      "dr_mecha2a4",
-      "dr_mecha4_sexta",
-      "ia",
-      "mecha2",
-      "mecha2b",
-      "mecha3a5",
-      "planilla",
-      "planilla_v2",
-      "prompts_entrada",
-      "recorte",
-      "tecnicaC",
-      "verificar_piezas"
-     ],
-     "sd": [
-      "Registro de la demo de combate 2D animada con las poses del mecha lobo.",
-      "Registro de resultados `out_DR` para los mechas 2, 3 y 4.",
-      "Registro de la sexta corrección de anclas y altura de brazos del mecha 4.",
-      "Registro de la simplificación del paso de intervención de IA.",
-      "Registro de la silueta base del mecha 2 y los ajustes de ancho de piernas.",
-      "Registro de métricas de piernas y detección automática para el mecha 2.",
-      "Registro de las pruebas experimentales con los mechas 3 a 5.",
-      "Registro de creación y uso de la planilla de medición.",
-      "Registro de cambios de la segunda versión de la planilla.",
-      "Registro de los prompts usados para generar las entradas del experimento.",
-      "Registro de pruebas y ajustes del recorte de piezas y silueta.",
-      "Registro de la implementación y evaluación experimental de la técnica C.",
-      "Registro de la verificación automática de la hoja de piezas."
-     ]
-    },
-    {
-     "g": true,
-     "p": "PROGRESO_entrada_",
-     "d": "Registro del cliente web por parte (2b a 5a), arnés E2E y verificación con el proyecto real.",
-     "s": [
-      "parte2b",
-      "parte3a",
-      "parte3b1",
-      "parte3b2",
-      "parte3b3",
-      "parte3c",
-      "parte4a",
-      "parte4a2",
-      "parte4a3",
-      "parte4a4",
-      "parte4b",
-      "parte4b2",
-      "parte4b3",
-      "parte4c",
-      "parte4d1",
-      "parte4d2",
-      "parte4d3",
-      "parte4d4",
-      "parte4d5",
-      "parte4e1",
-      "parte4e2",
-      "parte5a",
-      "verificacion1"
-     ],
-     "sd": [
-      "Creación de las pantallas vacías del cliente web.",
-      "Creación de componentes base reutilizables de la interfaz.",
-      "Incorporación de ButtonLink, cabecera de pantalla y Hangar.",
-      "Incorporación de CardLink, Home, Ciudad y modal de perfil público.",
-      "Incorporación de Fábrica, perfil personal y placeholders; cierre de la migración.",
-      "Incorporación de las fuentes Rajdhani y Exo 2.",
-      "Lista de Mis Mechas con datos de prueba.",
-      "Integración de las creaciones gratuitas entre motor e interfaz.",
-      "Incorporación de un alias directo al motor.",
-      "Registro de limpieza de errores de TypeScript.",
-      "Ficha del mecha en la pantalla Mis Mechas.",
-      "Ajustes para que la pantalla Hangar entre en el viewport.",
-      "Vista central de Mis Mechas y scroll limitado a los atributos.",
-      "Arnés E2E con Playwright y corrección de la ficha en pantallas bajas.",
-      "Ajuste de la ficha Mis Mechas según la referencia visual del Hangar.",
-      "Ajustes de flechas, aviso, panel e ítem del menú lateral.",
-      "Incorporación del logo en la navbar y del usuario en las pantallas.",
-      "Incorporación de iconos al menú lateral del Hangar.",
-      "Ajustes del fondo del Hangar y de la escena central del mecha.",
-      "Aplicación del layout ajustado al viewport en Home y Ciudad.",
-      "Aplicación del layout ajustado al viewport en Fábrica, Perfil y placeholders.",
-      "Esqueleto de Crear Mecha y su primer paso, Diseño.",
-      "Registro de verificación del cliente con pruebas end-to-end."
-     ]
+      "n": "README.md",
+      "dir": false,
+      "c": [],
+      "d": "Presentación del proyecto, estado del motor, pendientes y comandos de desarrollo."
     }
-   ],
-   "d": "Documentación: reglas de trabajo, diseño del juego, registro de progreso y experimento 1B."
-  },
-  {
-   "n": "packages",
-   "dir": true,
-   "c": [
-    {
-     "n": "client",
-     "dir": true,
-     "c": [
-      {
-       "n": "src",
-       "dir": true,
-       "c": [
-        {
-         "n": "app",
-         "dir": true,
-         "c": [
-          {
-           "n": "app.tsx",
-           "dir": false,
-           "c": [],
-           "d": "Componente raíz de la aplicación y contenedor de navegación."
-          },
-          {
-           "n": "routes.ts",
-           "dir": false,
-           "c": [],
-           "d": "Definición de las rutas y pantallas disponibles."
-          }
-         ]
-        },
-        {
-         "n": "screens",
-         "dir": true,
-         "c": [
-          {
-           "n": "city",
-           "dir": true,
-           "c": [
-            {
-             "n": "city-screen.tsx",
-             "dir": false,
-             "c": [],
-             "d": "Pantalla Ciudad con accesos a sus secciones."
-            },
-            {
-             "n": "public-profile-modal.tsx",
-             "dir": false,
-             "c": [],
-             "d": "Modal con la vista del perfil público de un jugador."
-            }
-           ]
-          },
-          {
-           "n": "create-mecha",
-           "dir": true,
-           "c": [
-            {
-             "n": "create-mecha-data.ts",
-             "dir": false,
-             "c": [],
-             "d": "Datos y opciones que usa el flujo de creación del mecha."
-            },
-            {
-             "n": "create-mecha-screen.tsx",
-             "dir": false,
-             "c": [],
-             "d": "Pantalla que coordina los pasos de Crear Mecha."
-            },
-            {
-             "n": "create-mecha.css",
-             "dir": false,
-             "c": [],
-             "d": "Estilos específicos del flujo Crear Mecha."
-            },
-            {
-             "n": "create-summary.tsx",
-             "dir": false,
-             "c": [],
-             "d": "Resumen de los datos y atributos del mecha en creación."
-            },
-            {
-             "n": "design-step.tsx",
-             "dir": false,
-             "c": [],
-             "d": "Contenido del paso Diseño del constructor."
-            },
-            {
-             "n": "mecha-preview.tsx",
-             "dir": false,
-             "c": [],
-             "d": "Vista previa visual del diseño del mecha."
-            },
-            {
-             "n": "step-tabs.tsx",
-             "dir": false,
-             "c": [],
-             "d": "Pestañas o indicadores de los pasos del constructor."
-            }
-           ]
-          },
-          {
-           "n": "factory",
-           "dir": true,
-           "c": [
-            {
-             "n": "factory-screen.tsx",
-             "dir": false,
-             "c": [],
-             "d": "Pantalla Fábrica y presentación de sus servicios."
-            }
-           ]
-          },
-          {
-           "n": "hangar",
-           "dir": true,
-           "c": [
-            {
-             "n": "my-mechas",
-             "dir": true,
-             "c": [
-              {
-               "n": "mecha-ficha.css",
-               "dir": false,
-               "c": [],
-               "d": "Estilos de la ficha de un mecha."
-              },
-              {
-               "n": "mecha-ficha.tsx",
-               "dir": false,
-               "c": [],
-               "d": "Ficha con información y atributos del mecha seleccionado."
-              },
-              {
-               "n": "mecha-fixtures.ts",
-               "dir": false,
-               "c": [],
-               "d": "Datos de prueba de mechas usados por la interfaz."
-              },
-              {
-               "n": "mecha-stage.tsx",
-               "dir": false,
-               "c": [],
-               "d": "Escenario o vista central donde se presenta el mecha."
-              },
-              {
-               "n": "mecha-summary.ts",
-               "dir": false,
-               "c": [],
-               "d": "Funciones para resumir o derivar información de un mecha."
-              },
-              {
-               "n": "my-mechas-section.tsx",
-               "dir": false,
-               "c": [],
-               "d": "Sección del Hangar para recorrer y gestionar Mis Mechas."
-              },
-              {
-               "n": "my-mechas.css",
-               "dir": false,
-               "c": [],
-               "d": "Estilos de la sección Mis Mechas."
-              }
-             ]
-            },
-            {
-             "n": "hangar-scene.css",
-             "dir": false,
-             "c": [],
-             "d": "Estilos de la escena central del Hangar."
-            },
-            {
-             "n": "hangar-screen.tsx",
-             "dir": false,
-             "c": [],
-             "d": "Pantalla principal del Hangar y sus secciones."
-            }
-           ]
-          },
-          {
-           "n": "home",
-           "dir": true,
-           "c": [
-            {
-             "n": "home-screen.tsx",
-             "dir": false,
-             "c": [],
-             "d": "Pantalla principal con los accesos centrales del juego."
-            }
-           ]
-          },
-          {
-           "n": "profile",
-           "dir": true,
-           "c": [
-            {
-             "n": "personal-profile-screen.tsx",
-             "dir": false,
-             "c": [],
-             "d": "Pantalla de perfil personal y edición de sus datos."
-            }
-           ]
-          }
-         ],
-         "d": "Pantallas del cliente (Ciudad, Crear Mecha, Fábrica, Hangar, Home, Perfil)."
-        },
-        {
-         "n": "styles",
-         "dir": true,
-         "c": [
-          {
-           "n": "fonts.ts",
-           "dir": false,
-           "c": [],
-           "d": "Declaración y carga de las fuentes tipográficas de la interfaz."
-          },
-          {
-           "n": "global.css",
-           "dir": false,
-           "c": [],
-           "d": "Estilos globales y reglas base de la aplicación."
-          },
-          {
-           "n": "tokens.css",
-           "dir": false,
-           "c": [],
-           "d": "Variables CSS compartidas de diseño, como colores y medidas."
-          },
-          {
-           "n": "tokens.ts",
-           "dir": false,
-           "c": [],
-           "d": "Valores de diseño compartidos disponibles desde TypeScript."
-          }
-         ],
-         "d": "Fuentes, tokens de diseño y estilos globales."
-        },
-        {
-         "n": "ui",
-         "dir": true,
-         "c": [
-          {
-           "n": "brand-logo.tsx",
-           "dir": false,
-           "c": [],
-           "d": "Componente del logotipo de Rivellon."
-          },
-          {
-           "n": "button-link.tsx",
-           "dir": false,
-           "c": [],
-           "d": "Componente reutilizable de enlace con apariencia de botón."
-          },
-          {
-           "n": "button.tsx",
-           "dir": false,
-           "c": [],
-           "d": "Componente reutilizable de botón."
-          },
-          {
-           "n": "card-link.tsx",
-           "dir": false,
-           "c": [],
-           "d": "Componente de tarjeta que funciona como enlace de navegación."
-          },
-          {
-           "n": "icons.tsx",
-           "dir": false,
-           "c": [],
-           "d": "Componentes de iconos de interfaz."
-          },
-          {
-           "n": "modal.tsx",
-           "dir": false,
-           "c": [],
-           "d": "Estructura reutilizable para ventanas modales."
-          },
-          {
-           "n": "notice.css",
-           "dir": false,
-           "c": [],
-           "d": "Estilos de las notificaciones de interfaz."
-          },
-          {
-           "n": "notice.tsx",
-           "dir": false,
-           "c": [],
-           "d": "Componente de notificación o aviso temporal."
-          },
-          {
-           "n": "panel.tsx",
-           "dir": false,
-           "c": [],
-           "d": "Componente reutilizable de panel."
-          },
-          {
-           "n": "placeholder-screen.tsx",
-           "dir": false,
-           "c": [],
-           "d": "Pantalla provisional para secciones todavía no implementadas."
-          },
-          {
-           "n": "screen-header.tsx",
-           "dir": false,
-           "c": [],
-           "d": "Cabecera compartida de las pantallas."
-          },
-          {
-           "n": "screen.css",
-           "dir": false,
-           "c": [],
-           "d": "Estilos comunes de composición y tamaño de pantalla."
-          },
-          {
-           "n": "ui.css",
-           "dir": false,
-           "c": [],
-           "d": "Estilos compartidos de los componentes de interfaz."
-          },
-          {
-           "n": "user-chip.tsx",
-           "dir": false,
-           "c": [],
-           "d": "Componente compacto de identidad del usuario."
-          }
-         ],
-         "d": "Componentes de interfaz reutilizables."
-        },
-        {
-         "n": "main.tsx",
-         "dir": false,
-         "c": [],
-         "d": "Punto de entrada React; monta la aplicación y sus estilos globales."
-        }
-       ],
-       "d": "Código fuente del cliente: app, pantallas, estilos y componentes de interfaz."
-      },
-      {
-       "n": "index.html",
-       "dir": false,
-       "c": [],
-       "d": "Documento HTML de entrada servido por Vite para el cliente."
-      },
-      {
-       "n": "package.json",
-       "dir": false,
-       "c": [],
-       "d": "Dependencias, metadatos y scripts npm del cliente web."
-      },
-      {
-       "n": "tsconfig.json",
-       "dir": false,
-       "c": [],
-       "d": "Opciones de compilación y comprobación TypeScript del cliente."
-      },
-      {
-       "n": "vite.config.ts",
-       "dir": false,
-       "c": [],
-       "d": "Configuración de Vite para desarrollo y compilación del cliente."
-      }
-     ],
-     "d": "Interfaz web principal (React 18, Vite 5, react-router); en construcción."
-    },
-    {
-     "n": "engine",
-     "dir": true,
-     "c": [
-      {
-       "n": "src",
-       "dir": true,
-       "c": [
-        {
-         "n": "combat.ts",
-         "dir": false,
-         "c": [],
-         "d": "Creación del estado de combate y aplicación de acciones y reglas."
-        },
-        {
-         "n": "hex.ts",
-         "dir": false,
-         "c": [],
-         "d": "Operaciones y utilidades de coordenadas para el tablero hexagonal."
-        },
-        {
-         "n": "index.ts",
-         "dir": false,
-         "c": [],
-         "d": "Exportaciones públicas del paquete de motor."
-        },
-        {
-         "n": "rng.ts",
-         "dir": false,
-         "c": [],
-         "d": "Generador pseudoaleatorio determinista usado por el combate."
-        },
-        {
-         "n": "rules.ts",
-         "dir": false,
-         "c": [],
-         "d": "Constantes provisionales y parámetros de las reglas de combate."
-        },
-        {
-         "n": "types.ts",
-         "dir": false,
-         "c": [],
-         "d": "Tipos compartidos para estados, acciones, eventos y unidades."
-        }
-       ],
-       "d": "Código fuente del motor de combate."
-      },
-      {
-       "n": "test",
-       "dir": true,
-       "c": [
-        {
-         "n": "combat.test.ts",
-         "dir": false,
-         "c": [],
-         "d": "Pruebas unitarias del comportamiento del motor de combate."
-        }
-       ],
-       "d": "Pruebas del motor."
-      },
-      {
-       "n": "package.json",
-       "dir": false,
-       "c": [],
-       "d": "Dependencias, metadatos y scripts npm del motor."
-      },
-      {
-       "n": "tsconfig.json",
-       "dir": false,
-       "c": [],
-       "d": "Opciones de TypeScript para compilar y validar el motor."
-      }
-     ],
-     "d": "Reglas del combate, puras y deterministas (TypeScript, Vitest), y sus pruebas."
-    }
-   ]
-  },
-  {
-   "n": "root-files-description",
-   "dir": true,
-   "c": [
-    {
-     "n": ".git",
-     "dir": false,
-     "c": [],
-     "d": "Datos internos de Git de ese repositorio.",
-     "i": null
-    },
-    {
-     "n": "build.py",
-     "dir": false,
-     "c": [],
-     "d": "Genera `MAPA.md` e `index.html` a partir de `mapa.json`."
-    },
-    {
-     "n": "index.html",
-     "dir": false,
-     "c": [],
-     "d": "Vista web navegable del mapa de archivos, con filtro y opción de copiar."
-    },
-    {
-     "n": "mapa.json",
-     "dir": false,
-     "c": [],
-     "d": "Datos estructurados de rutas, descripciones y agrupaciones usados por el generador."
-    },
-    {
-     "n": "MAPA.md",
-     "dir": false,
-     "c": [],
-     "d": "Mapa descriptivo del proyecto generado desde `mapa.json`."
-    },
-    {
-     "n": "README.md",
-     "dir": false,
-     "c": [],
-     "d": "Presentación del generador y de los archivos del mapa del proyecto."
-    }
-   ],
-   "d": "Repositorio de esta web (mapa del proyecto); tiene su propio .git."
-  },
-  {
-   "n": "tests-e2e",
-   "dir": true,
-   "c": [
-    {
-     "n": "stubs",
-     "dir": true,
-     "c": [
-      {
-       "n": "empty.ts",
-       "dir": false,
-       "c": [],
-       "d": "Módulo vacío usado como sustituto durante la compilación del arnés."
-      },
-      {
-       "n": "react-router-dom.tsx",
-       "dir": false,
-       "c": [],
-       "d": "Sustituto de React Router para aislar las pantallas en el arnés."
-      }
-     ],
-     "d": "Reemplazos simulados usados por el arnés."
-    },
-    {
-     "n": "build.mjs",
-     "dir": false,
-     "c": [],
-     "d": "Prepara y empaqueta el arnés de pruebas end-to-end con sus stubs."
-    },
-    {
-     "n": "e2e-pantallas.py",
-     "dir": false,
-     "c": [],
-     "d": "Prueba sobre el proyecto real con Vite: que ninguna pantalla scrollee y la interacción de Crear Mecha."
-    },
-    {
-     "n": "e2e.py",
-     "dir": false,
-     "c": [],
-     "d": "Prueba end-to-end del flujo usando el arnés con componentes simulados."
-    },
-    {
-     "n": "entry.tsx",
-     "dir": false,
-     "c": [],
-     "d": "Punto de entrada del arnés de pruebas."
-    },
-    {
-     "n": "linea-produccion.zip",
-     "dir": false,
-     "c": [],
-     "d": "Copia comprimida de tools/linea-produccion.",
-     "i": true
-    }
-   ],
-   "d": "Pruebas end-to-end (Playwright): verificación visual de pantallas y de flujo."
-  },
-  {
-   "n": "tools",
-   "dir": true,
-   "c": [
-    {
-     "n": "demo-combate",
-     "dir": true,
-     "c": [
-      {
-       "n": "assets",
-       "dir": true,
-       "c": [
-        {
-         "n": "hoja_poses_lobo.png",
-         "dir": false,
-         "c": [],
-         "d": "Hoja de sprites con poses del mecha lobo para la animación."
-        },
-        {
-         "n": "mecha_lobo.json",
-         "dir": false,
-         "c": [],
-         "d": "Metadatos de las poses y de su orientación nativa."
-        },
-        {
-         "n": "mecha_lobo.png",
-         "dir": false,
-         "c": [],
-         "d": "Imagen del mecha lobo en pose de reposo."
-        }
-       ]
-      },
-      {
-       "n": "css",
-       "dir": true,
-       "c": [
-        {
-         "n": "demo.css",
-         "dir": false,
-         "c": [],
-         "d": "Presentación visual de la demo y sus controles."
-        }
-       ]
-      },
-      {
-       "n": "js",
-       "dir": true,
-       "c": [
-        {
-         "n": "animaciones.js",
-         "dir": false,
-         "c": [],
-         "d": "Animaciones de movimiento, ataque, defensa, daño y derrota."
-        },
-        {
-         "n": "escena.js",
-         "dir": false,
-         "c": [],
-         "d": "Dibujo del tablero y de los mechas en el canvas."
-        },
-        {
-         "n": "main.js",
-         "dir": false,
-         "c": [],
-         "d": "Inicialización de la demo y conexión de controles y animaciones."
-        },
-        {
-         "n": "motor-falso.js",
-         "dir": false,
-         "c": [],
-         "d": "Simulación simplificada de eventos de combate para la demo."
-        },
-        {
-         "n": "recorte.js",
-         "dir": false,
-         "c": [],
-         "d": "Recorte de las poses y del fondo de las imágenes de entrada."
-        }
-       ]
-      },
-      {
-       "n": "index.html",
-       "dir": false,
-       "c": [],
-       "d": "Página de entrada de la demo de combate."
-      },
-      {
-       "n": "README.md",
-       "dir": false,
-       "c": [],
-       "d": "Instrucciones, flujo y límites de la demo de combate 2D."
-      }
-     ],
-     "d": "Demo de combate 2D con las poses del mecha lobo (experimento 1B)."
-    },
-    {
-     "n": "ensamblado-2d",
-     "dir": true,
-     "c": [
-      {
-       "n": "__pycache__",
-       "dir": true,
-       "c": [],
-       "fl": [
-        "ajustar.cpython-312.pyc",
-        "assemble.cpython-312.pyc",
-        "colocar.cpython-312.pyc",
-        "detectar.cpython-312.pyc",
-        "regiones.cpython-312.pyc",
-        "seg.cpython-312.pyc"
-       ],
-       "d": "Bytecode de Python cacheado; no hace falta versionarlo."
-      },
-      {
-       "n": "mecha2",
-       "dir": true,
-       "c": [
-        {
-         "n": "entrada",
-         "dir": true,
-         "c": [],
-         "fl": [
-          "anclas.json",
-          "ensamblado_original_modoB.png",
-          "hoja_piezas.png",
-          "silueta.png"
-         ],
-         "d": "Entradas: hoja de piezas, silueta guía y anclas."
-        },
-        {
-         "n": "piezas",
-         "dir": true,
-         "c": [],
-         "fl": [
-          "aux.png",
-          "head.png",
-          "left_arm.png",
-          "legs.png",
-          "piezas.json",
-          "right_arm.png",
-          "torso.png"
-         ],
-         "d": "Recortes de las piezas y sus metadatos (piezas.json)."
-        },
-        {
-         "n": "salida",
-         "dir": true,
-         "c": [],
-         "fl": [
-          "debug_DR.png",
-          "ia_resultado.png",
-          "ia_resultado_color.png",
-          "metricas.json",
-          "metricas_C.json",
-          "metricas_D.json",
-          "metricas_DR.json",
-          "metricas_fijos.json",
-          "out_D.png",
-          "out_DR.png",
-          "overlay.png",
-          "overlay_D.png"
-         ],
-         "d": "Resultados del ensamblado (out_D, out_DR, ia_resultado), superposiciones y métricas."
-        }
-       ]
-      },
-      {
-       "n": "mecha3",
-       "dir": true,
-       "c": [
-        {
-         "n": "entrada",
-         "dir": true,
-         "c": [],
-         "fl": [
-          "anclas.json",
-          "hoja_piezas.png",
-          "silueta.png"
-         ],
-         "d": "Entradas: hoja de piezas, silueta guía y anclas."
-        },
-        {
-         "n": "piezas",
-         "dir": true,
-         "c": [],
-         "fl": [
-          "aux.png",
-          "head.png",
-          "left_arm.png",
-          "legs.png",
-          "piezas.json",
-          "right_arm.png",
-          "torso.png"
-         ],
-         "d": "Recortes de las piezas y sus metadatos (piezas.json)."
-        },
-        {
-         "n": "salida",
-         "dir": true,
-         "c": [],
-         "fl": [
-          "debug_DR.png",
-          "ia_resultado.png",
-          "ia_resultado_color.png",
-          "metricas.json",
-          "metricas_C.json",
-          "metricas_D.json",
-          "metricas_DR.json",
-          "out_D.png",
-          "out_DR.png",
-          "overlay.png",
-          "overlay_D.png"
-         ],
-         "d": "Resultados del ensamblado (out_D, out_DR, ia_resultado), superposiciones y métricas."
-        }
-       ]
-      },
-      {
-       "n": "mecha4",
-       "dir": true,
-       "c": [
-        {
-         "n": "entrada",
-         "dir": true,
-         "c": [],
-         "fl": [
-          "anclas.json",
-          "hoja_piezas.png",
-          "silueta.png"
-         ],
-         "d": "Entradas: hoja de piezas, silueta guía y anclas."
-        },
-        {
-         "n": "piezas",
-         "dir": true,
-         "c": [],
-         "fl": [
-          "aux.png",
-          "head.png",
-          "left_arm.png",
-          "legs.png",
-          "piezas.json",
-          "right_arm.png",
-          "torso.png"
-         ],
-         "d": "Recortes de las piezas y sus metadatos (piezas.json)."
-        },
-        {
-         "n": "salida",
-         "dir": true,
-         "c": [],
-         "fl": [
-          "debug_DR.png",
-          "ia_resultado.png",
-          "ia_resultado_color.png",
-          "metricas.json",
-          "metricas_C.json",
-          "metricas_D.json",
-          "metricas_DR.json",
-          "out_DR.png",
-          "overlay.png"
-         ],
-         "d": "Resultados del ensamblado (out_D, out_DR, ia_resultado), superposiciones y métricas."
-        }
-       ]
-      },
-      {
-       "n": "mecha5",
-       "dir": true,
-       "c": [
-        {
-         "n": "entrada",
-         "dir": true,
-         "c": [],
-         "fl": [
-          "anclas.json",
-          "hoja_piezas.png",
-          "silueta.png"
-         ],
-         "d": "Entradas: hoja de piezas, silueta guía y anclas."
-        },
-        {
-         "n": "piezas",
-         "dir": true,
-         "c": [],
-         "fl": [
-          "aux.png",
-          "head.png",
-          "left_arm.png",
-          "legs.png",
-          "piezas.json",
-          "right_arm.png",
-          "torso.png"
-         ],
-         "d": "Recortes de las piezas y sus metadatos (piezas.json)."
-        },
-        {
-         "n": "salida",
-         "dir": true,
-         "c": [],
-         "fl": [
-          "debug_DR.png",
-          "ia_resultado.png",
-          "ia_resultado_color.png",
-          "metricas.json",
-          "metricas_C.json",
-          "metricas_D.json",
-          "metricas_DR.json",
-          "out_D.png",
-          "out_DR.png",
-          "overlay.png",
-          "overlay_D.png"
-         ],
-         "d": "Resultados del ensamblado (out_D, out_DR, ia_resultado), superposiciones y métricas."
-        }
-       ]
-      },
-      {
-       "n": "ensamblar.py",
-       "dir": false,
-       "c": [],
-       "d": "Ensamblado experimental por regiones de silueta (técnica C)."
-      },
-      {
-       "n": "exportar.py",
-       "dir": false,
-       "c": [],
-       "d": "Recorta las piezas de una hoja y exporta sus imágenes y metadatos."
-      },
-      {
-       "n": "overlay.py",
-       "dir": false,
-       "c": [],
-       "d": "Genera una superposición visual para comparar piezas y silueta."
-      },
-      {
-       "n": "preparar_ia.py",
-       "dir": false,
-       "c": [],
-       "d": "Prepara imágenes y datos para el paso experimental de IA."
-      },
-      {
-       "n": "prompt_hoja.txt",
-       "dir": false,
-       "c": [],
-       "d": "Prompt experimental para generar la hoja de piezas del mecha."
-      },
-      {
-       "n": "prompt_silueta.txt",
-       "dir": false,
-       "c": [],
-       "d": "Prompt experimental para generar la silueta guía del mecha."
-      },
-      {
-       "n": "README.md",
-       "dir": false,
-       "c": [],
-       "d": "Guía del experimento, scripts disponibles, entradas, resultados y limitaciones."
-      }
-     ],
-     "d": "Scripts Python provisorios del experimento 1B (ensamblado sobre silueta, métricas); no son código del juego."
-    },
-    {
-     "n": "linea-produccion",
-     "dir": true,
-     "c": [
-      {
-       "n": "css",
-       "dir": true,
-       "c": [
-        {
-         "n": "linea.css",
-         "dir": false,
-         "c": [],
-         "d": "Estilos de la página de la línea de producción."
-        }
-       ]
-      },
-      {
-       "n": "js",
-       "dir": true,
-       "c": [
-        {
-         "n": "color.js",
-         "dir": false,
-         "c": [],
-         "d": "Corrector de color y brillo: iguala una imagen con transparencia a la hoja de piezas (Lab, solo píxeles opacos)."
-        },
-        {
-         "n": "main.js",
-         "dir": false,
-         "c": [],
-         "d": "Arma la página: panel de prompts con los pasos de separar y recortar intercalados."
-        },
-        {
-         "n": "panel-recorte.js",
-         "dir": false,
-         "c": [],
-         "d": "Panel común de los pasos de recorte: elegir una imagen, recortar N sprites, corregir color opcional y descargarlos."
-        },
-        {
-         "n": "prompts.js",
-         "dir": false,
-         "c": [],
-         "d": "Carga y composición de las plantillas de prompts."
-        },
-        {
-         "n": "recortar.js",
-         "dir": false,
-         "c": [],
-         "d": "Pasos que recortan el mecha ensamblado (reposo) y la hoja de poses (carga, golpe, guardia, daño, derrotado)."
-        },
-        {
-         "n": "recorte.js",
-         "dir": false,
-         "c": [],
-         "d": "Copia del recorte de fondo gris de demo-combate; devuelve cada pieza como imagen con transparencia."
-        },
-        {
-         "n": "separar.js",
-         "dir": false,
-         "c": [],
-         "d": "Paso que separa las seis piezas de la hoja (usa el panel común de recorte)."
-        },
-        {
-         "n": "visor.js",
-         "dir": false,
-         "c": [],
-         "d": "Utilidades de interfaz y visualización de los pasos."
-        }
-       ]
-      },
-      {
-       "n": "prompts",
-       "dir": true,
-       "c": [
-        {
-         "n": "prompt_ensamblado.txt",
-         "dir": false,
-         "c": [],
-         "d": "Plantilla para pedir a ChatGPT que ensamble las piezas del mecha."
-        },
-        {
-         "n": "prompt_hoja.txt",
-         "dir": false,
-         "c": [],
-         "d": "Plantilla para generar una hoja con las piezas separadas del mecha."
-        },
-        {
-         "n": "prompt_pose_unica.txt",
-         "dir": false,
-         "c": [],
-         "d": "Plantilla para solicitar una pose individual del mecha."
-        },
-        {
-         "n": "prompt_poses.txt",
-         "dir": false,
-         "c": [],
-         "d": "Plantilla principal para generar una hoja de poses de combate."
-        },
-        {
-         "n": "prompt_poses_v2.txt",
-         "dir": false,
-         "c": [],
-         "d": "Variante de la plantilla de poses con restricciones de encuadre y consistencia."
-        }
-       ]
-      },
-      {
-       "n": "index.html",
-       "dir": false,
-       "c": [],
-       "d": "Página de entrada de la línea de producción de mechas."
-      },
-      {
-       "n": "README.md",
-       "dir": false,
-       "c": [],
-       "d": "Instrucciones y flujo de la herramienta web experimental de prompts."
-      }
-     ],
-     "d": "Web que arma los prompts de la línea de producción de mechas y recorta piezas, mecha y poses en el navegador (experimento 1B)."
-    },
-    {
-     "n": "tools.zip",
-     "dir": false,
-     "c": [],
-     "d": "Archivo comprimido de las herramientas.",
-     "i": true
-    }
-   ],
-   "d": "Utilidades y recursos experimentales; no forman parte del núcleo del juego."
-  },
-  {
-   "n": ".gitignore",
-   "dir": false,
-   "c": [],
-   "d": "Patrones de archivos y carpetas que Git debe ignorar."
-  },
-  {
-   "n": "docs.zip",
-   "dir": false,
-   "c": [],
-   "d": "Copia comprimida de docs/.",
-   "i": null
-  },
-  {
-   "n": "package-lock.json",
-   "dir": false,
-   "c": [],
-   "d": "Versiones bloqueadas de las dependencias npm instaladas."
-  },
-  {
-   "n": "package.json",
-   "dir": false,
-   "c": [],
-   "d": "Manifiesto npm raíz; define los workspaces y comandos compartidos."
-  },
-  {
-   "n": "README.md",
-   "dir": false,
-   "c": [],
-   "d": "Presentación del proyecto, estado del motor, pendientes y comandos de desarrollo."
-  }
- ],
- "d": "Rivellon: Tactical Mecha Arena. Juego web de combate táctico por turnos entre mechas modulares (monorepo con npm workspaces)."
+  ],
+  "d": "Rivellon: Tactical Mecha Arena. Juego web de combate táctico por turnos entre mechas modulares (monorepo con npm workspaces). El inventario omite node_modules, metadatos .git y archivos con nombres típicos de credenciales; enumera nombres y descripciones, no contenidos de archivos."
 }

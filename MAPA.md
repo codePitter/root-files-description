@@ -1,36 +1,105 @@
 # rivellon-arena — mapa del proyecto
 Generado: 2026-11-13. Fecha entre paréntesis = última modificación en Git. `~` = descripción inferida del nombre (por confirmar).
 
-- `rivellon-arena/` — Rivellon: Tactical Mecha Arena. Juego web de combate táctico por turnos entre mechas modulares (monorepo con npm workspaces).
+- `rivellon-arena/` — Rivellon: Tactical Mecha Arena. Juego web de combate táctico por turnos entre mechas modulares (monorepo con npm workspaces). El inventario omite node_modules, metadatos .git y archivos con nombres típicos de credenciales; enumera nombres y descripciones, no contenidos de archivos.
   - `docs/` — Documentación: reglas de trabajo, diseño del juego, registro de progreso y experimento 1B.
-    - `CLAUDE.md` — Reglas de trabajo obligatorias para Claude: tareas chicas, entrega en zip, verificar y dejar registro de progreso.
+    - `CLAUDE.md` — Instrucciones de trabajo del proyecto: alcance de tareas, arquitectura, diseño, navegación y registro de progreso. (2026-11-07)
     - `descripcion_archivos.md` — Este inventario con una descripción breve por archivo.
-    - `documento_conceptual_juego_robots_unificado (1).md` — Fuente de verdad del diseño (v0.7, unifica las versiones 0.1 a 0.6). Los demás docs lo citan sin el «(1)».
-    - `experimento1b_mecha1.md` — Experimento 1B, mecha 1 «Guardián Urbano» (2D por capas): datos del pedido y prompts listos para copiar.
-    - `experimento1b_mecha2.md` — Experimento 1B, mecha 2: resultados con silueta base; scripts e imágenes en tools/ensamblado-2d.
-    - `experimento1b_mecha3a5.md` — Experimento 1B, mechas 3 a 5: resultados de la primera corrida (diseño y silueta de cada uno).
-    - `experimento1b_planilla.xlsx` — Planilla de medición del experimento 1B (por pieza, por mecha, silueta, pieza ajena y decisión 3D vs 2D).
-    - `experimento1b_planilla_v2.xlsx` — Planilla v2 del circuito actual; reemplaza a la v1 y guarda su histórico.
-    - `experimento1b_tecnicaC.md` — Experimento 1B, técnica C: ensamblado por regiones de la silueta (parte 1 de 3).
-    - `PROGRESO.md` — Índice general de progreso: estado actual, próximo paso exacto y actualizaciones por fecha.
-    - `PROMPT_RETOMAR.md` — Prompt para retomar el proyecto en una sesión nueva: qué es, regla de pedir los archivos del paso y archivos por tipo de tarea.
-    - `protocolo_ia_mechas.md` — Protocolo del experimento de viabilidad: pasar de un boceto hecho por IA a seis piezas que encajen; incluye la variante 2D (§12).
-    - `README.md` — README de Rivellon: resumen del motor de combate (@rivellon/engine), pendientes, comandos y decisiones por defecto.
-    - `tree.md` — Este mismo árbol del proyecto, en texto.
-    - `PROGRESO_entrada_experimento1b_linea_parte{1,2,3a,3b,3c,4a,4b,4c,4d,4e,4f,4g,4h,4i,4j,4k,4l,4m,4n,4o,4q,4r,4s,4t,4u,4v,4w,4x,4y,4z,4z2,4z3,4z4}.md` ×33 — Registro de la línea de producción del experimento 1B (partes 1 a 4z4). ()
-    - `PROGRESO_entrada_experimento1b_{demo_combate,dr_mecha2a4,dr_mecha4_sexta,ia,mecha2,mecha2b,mecha3a5,planilla,planilla_v2,prompts_entrada,recorte,tecnicaC,verificar_piezas}.md` ×13 — Registro del experimento 1B fuera de la línea: mechas 2 a 5, planillas, paso de IA, técnicas C y D, demo de combate. ()
-    - `PROGRESO_entrada_{parte2b,parte3a,parte3b1,parte3b2,parte3b3,parte3c,parte4a,parte4a2,parte4a3,parte4a4,parte4b,parte4b2,parte4b3,parte4c,parte4d1,parte4d2,parte4d3,parte4d4,parte4d5,parte4e1,parte4e2,parte5a,verificacion1}.md` ×23 — Registro del cliente web por parte (2b a 5a), arnés E2E y verificación con el proyecto real. ()
-  - `packages/`
+    - `documento_conceptual_juego_robots_unificado (1).md` — Documento conceptual unificado que define el diseño y las reglas del juego. (2026-11-07)
+    - `experimento1b_mecha1.md` — Diseño y prompts del primer mecha del Experimento 1B, «Guardián Urbano».
+    - `experimento1b_mecha2.md` — Resultados del experimento de ensamblado 2D con el mecha 2.
+    - `experimento1b_mecha3a5.md` — Resultados experimentales de los mechas 3, 4 y 5.
+    - `experimento1b_planilla.xlsx` — Planilla de medición original del Experimento 1B.
+    - `experimento1b_planilla_v2.xlsx` — Segunda versión de la planilla de medición experimental.
+    - `experimento1b_tecnicaC.md` — Explicación de la técnica C: ensamblado de piezas por regiones de la silueta.
+    - `PROGRESO.md` — Índice general del progreso y del próximo paso de desarrollo. (2026-11-07)
+    - `PROGRESO_entrada_experimento1b_demo_combate.md` — Registro de la demo de combate 2D animada con las poses del mecha lobo.
+    - `PROGRESO_entrada_experimento1b_dr_mecha2a4.md` — Registro de resultados `out_DR` para los mechas 2, 3 y 4.
+    - `PROGRESO_entrada_experimento1b_dr_mecha4_sexta.md` — Registro de la sexta corrección de anclas y altura de brazos del mecha 4.
+    - `PROGRESO_entrada_experimento1b_ia.md` — Registro de la simplificación del paso de intervención de IA.
+    - `PROGRESO_entrada_experimento1b_linea_parte1.md` — Implementación inicial de la línea web y sus pasos 0 a 2.
+    - `PROGRESO_entrada_experimento1b_linea_parte2.md` — Implementación del paso 3 de la línea: detección de anclas.
+    - `PROGRESO_entrada_experimento1b_linea_parte3a.md` — Registro de los pasos 4 y 5 de la línea de producción.
+    - `PROGRESO_entrada_experimento1b_linea_parte3b.md` — Registro parcial del paso 7 de la línea de producción.
+    - `PROGRESO_entrada_experimento1b_linea_parte3c.md` — Cierre de la parte 3b y registro del paso 6.
+    - `PROGRESO_entrada_experimento1b_linea_parte4a.md` — Registro de los scripts de ejecución completa y verificación.
+    - `PROGRESO_entrada_experimento1b_linea_parte4b.md` — Registro de la medición de resultados y exportación a CSV.
+    - `PROGRESO_entrada_experimento1b_linea_parte4c.md` — Registro de la verificación de la hoja de piezas en el paso 1.
+    - `PROGRESO_entrada_experimento1b_linea_parte4d.md` — Ajustes para detectar armas y manos y mejorar las anclas del brazo.
+    - `PROGRESO_entrada_experimento1b_linea_parte4e.md` — Ajuste de la detección del torso tomando los hombros como referencia.
+    - `PROGRESO_entrada_experimento1b_linea_parte4f.md` — Ajuste de los puntos de hombro hacia los extremos superiores de las hombreras.
+    - `PROGRESO_entrada_experimento1b_linea_parte4g.md` — Ajuste del encastre de los brazos mediante el ancho del bíceps.
+    - `PROGRESO_entrada_experimento1b_linea_parte4h.md` — Comparación de los bíceps de las piezas con los de la silueta.
+    - `PROGRESO_entrada_experimento1b_linea_parte4i.md` — Ajuste de la escala del brazo usando el ancho del bíceps de la silueta.
+    - `PROGRESO_entrada_experimento1b_linea_parte4j.md` — Ajuste para igualar el largo de los brazos.
+    - `PROGRESO_entrada_experimento1b_linea_parte4k.md` — Ajuste de la posición de la muñeca usando el borde de la muñequera.
+    - `PROGRESO_entrada_experimento1b_linea_parte4l.md` — Corrección de orientación del brazo con escudo y su pulgar.
+    - `PROGRESO_entrada_experimento1b_linea_parte4m.md` — Alineación de las muñecas de las piezas con las muñecas de la silueta.
+    - `PROGRESO_entrada_experimento1b_linea_parte4n.md` — Corrección del encuadre del paso 3 y opción de piernas completas en el paso 4.
+    - `PROGRESO_entrada_experimento1b_linea_parte4o.md` — Separación de la validación de pose y color para decidir la corrección del paso 7.
+    - `PROGRESO_entrada_experimento1b_linea_parte4q.md` — Espejado automático de un brazo cuando la verificación detecta dos del mismo lado.
+    - `PROGRESO_entrada_experimento1b_linea_parte4r.md` — Corrección para conservar en el paso 3 el espejo aplicado en el paso 1.
+    - `PROGRESO_entrada_experimento1b_linea_parte4s.md` — Actualización del prompt de silueta para incluir la cabeza.
+    - `PROGRESO_entrada_experimento1b_linea_parte4t.md` — Actualización del prompt de ensamblado para corregir brazos desproporcionados.
+    - `PROGRESO_entrada_experimento1b_linea_parte4u.md` — Ajustes del lado del escudo y de la detección de muñeca con accesorios.
+    - `PROGRESO_entrada_experimento1b_linea_parte4v.md` — Actualización del prompt para exigir apariencia mecánica en las piezas.
+    - `PROGRESO_entrada_experimento1b_linea_parte4w.md` — Especificación explícita de la dirección de cada brazo en el prompt.
+    - `PROGRESO_entrada_experimento1b_linea_parte4x.md` — Cambio del orden de las piezas para generar los brazos juntos como par espejado.
+    - `PROGRESO_entrada_experimento1b_linea_parte4y.md` — Retiro del ensamblado por scripts y delegación del ensamblado a ChatGPT.
+    - `PROGRESO_entrada_experimento1b_linea_parte4z.md` — Diseño del prompt para generar poses de animación para el combate en grilla.
+    - `PROGRESO_entrada_experimento1b_linea_parte4z2.md` — Registro de la hoja de poses aprobada del mecha lobo y del prompt de pose única.
+    - `PROGRESO_entrada_experimento1b_linea_parte4z3.md` — Variante ajustada del prompt para generar hojas de poses.
+    - `PROGRESO_entrada_experimento1b_linea_parte4z4.md` — Primera tanda para retirar el prompt de silueta e incorporar separación y recorte.
+    - `PROGRESO_entrada_experimento1b_linea_parte4z5.md` — Segunda tanda: paso del navegador que separa las seis piezas de la hoja con fondo transparente.
+    - `PROGRESO_entrada_experimento1b_linea_parte4z6.md` — Tercera tanda: pasos de navegador para recortar el mecha ensamblado y las poses, y módulo común de recorte.
+    - `PROGRESO_entrada_experimento1b_linea_parte4z7.md` — Corrector de color y brillo de los pasos de recorte, igualado a la hoja de piezas.
+    - `PROGRESO_entrada_experimento1b_mecha2.md` — Registro de la silueta base del mecha 2 y los ajustes de ancho de piernas.
+    - `PROGRESO_entrada_experimento1b_mecha2b.md` — Registro de métricas de piernas y detección automática para el mecha 2.
+    - `PROGRESO_entrada_experimento1b_mecha3a5.md` — Registro de las pruebas experimentales con los mechas 3 a 5.
+    - `PROGRESO_entrada_experimento1b_planilla.md` — Registro de creación y uso de la planilla de medición.
+    - `PROGRESO_entrada_experimento1b_planilla_v2.md` — Registro de cambios de la segunda versión de la planilla.
+    - `PROGRESO_entrada_experimento1b_prompts_entrada.md` — Registro de los prompts usados para generar las entradas del experimento.
+    - `PROGRESO_entrada_experimento1b_recorte.md` — Registro de pruebas y ajustes del recorte de piezas y silueta.
+    - `PROGRESO_entrada_experimento1b_tecnicaC.md` — Registro de la implementación y evaluación experimental de la técnica C.
+    - `PROGRESO_entrada_experimento1b_verificar_piezas.md` — Registro de la verificación automática de la hoja de piezas.
+    - `PROGRESO_entrada_parte2b.md` — Creación de las pantallas vacías del cliente web. (2026-11-07)
+    - `PROGRESO_entrada_parte3a.md` — Creación de componentes base reutilizables de la interfaz. (2026-11-07)
+    - `PROGRESO_entrada_parte3b1.md` — Incorporación de ButtonLink, cabecera de pantalla y Hangar. (2026-11-07)
+    - `PROGRESO_entrada_parte3b2.md` — Incorporación de CardLink, Home, Ciudad y modal de perfil público. (2026-11-07)
+    - `PROGRESO_entrada_parte3b3.md` — Incorporación de Fábrica, perfil personal y placeholders; cierre de la migración. (2026-11-07)
+    - `PROGRESO_entrada_parte3c.md` — Incorporación de las fuentes Rajdhani y Exo 2. (2026-11-07)
+    - `PROGRESO_entrada_parte4a.md` — Lista de Mis Mechas con datos de prueba. (2026-11-07)
+    - `PROGRESO_entrada_parte4a2.md` — Integración de las creaciones gratuitas entre motor e interfaz. (2026-11-07)
+    - `PROGRESO_entrada_parte4a3.md` — Incorporación de un alias directo al motor. (2026-11-07)
+    - `PROGRESO_entrada_parte4a4.md` — Registro de limpieza de errores de TypeScript. (2026-11-07)
+    - `PROGRESO_entrada_parte4b.md` — Ficha del mecha en la pantalla Mis Mechas. (2026-11-07)
+    - `PROGRESO_entrada_parte4b2.md` — Ajustes para que la pantalla Hangar entre en el viewport. (2026-11-07)
+    - `PROGRESO_entrada_parte4b3.md` — Vista central de Mis Mechas y scroll limitado a los atributos. (2026-11-07)
+    - `PROGRESO_entrada_parte4c.md` — Arnés E2E con Playwright y corrección de la ficha en pantallas bajas. (2026-11-07)
+    - `PROGRESO_entrada_parte4d1.md` — Ajuste de la ficha Mis Mechas según la referencia visual del Hangar. (2026-11-07)
+    - `PROGRESO_entrada_parte4d2.md` — Ajustes de flechas, aviso, panel e ítem del menú lateral. (2026-11-07)
+    - `PROGRESO_entrada_parte4d3.md` — Incorporación del logo en la navbar y del usuario en las pantallas. (2026-11-07)
+    - `PROGRESO_entrada_parte4d4.md` — Incorporación de iconos al menú lateral del Hangar. (2026-11-07)
+    - `PROGRESO_entrada_parte4d5.md` — Ajustes del fondo del Hangar y de la escena central del mecha. (2026-11-07)
+    - `PROGRESO_entrada_parte4e1.md` — Aplicación del layout ajustado al viewport en Home y Ciudad.
+    - `PROGRESO_entrada_parte4e2.md` — Aplicación del layout ajustado al viewport en Fábrica, Perfil y placeholders.
+    - `PROGRESO_entrada_parte5a.md` — Esqueleto de Crear Mecha y su primer paso, Diseño.
+    - `PROGRESO_entrada_verificacion1.md` — Registro de verificación del cliente con pruebas end-to-end.
+    - `PROMPT_RETOMAR.md` — Guía para retomar el trabajo del proyecto en una sesión nueva. (2026-11-07)
+    - `protocolo_ia_mechas.md` — Protocolo para evaluar la creación de mechas con IA, incluida la alternativa de ensamblado 2D por piezas.
+    - `README.md` — Resumen del juego, del motor de combate, sus pendientes y las decisiones técnicas vigentes. (2026-11-07)
+    - `tree.md` — Árbol del repositorio en formato de texto. (2026-11-07)
+  - `packages/` — ~Directorio de archivos del proyecto.
     - `client/` — Interfaz web principal (React 18, Vite 5, react-router); en construcción.
       - `src/` — Código fuente del cliente: app, pantallas, estilos y componentes de interfaz.
-        - `app/`
-          - `app.tsx` — Componente raíz de la aplicación y contenedor de navegación.
-          - `routes.ts` — Definición de las rutas y pantallas disponibles.
+        - `app/` — ~Directorio de archivos del proyecto.
+          - `app.tsx` — Componente raíz de la aplicación y contenedor de navegación. (2026-11-10)
+          - `routes.ts` — Definición de las rutas y pantallas disponibles. (2026-11-07)
         - `screens/` — Pantallas del cliente (Ciudad, Crear Mecha, Fábrica, Hangar, Home, Perfil).
-          - `city/`
-            - `city-screen.tsx` — Pantalla Ciudad con accesos a sus secciones.
-            - `public-profile-modal.tsx` — Modal con la vista del perfil público de un jugador.
-          - `create-mecha/`
+          - `city/` — ~Directorio de archivos del proyecto.
+            - `city-screen.tsx` — Pantalla Ciudad con accesos a sus secciones. (2026-11-07)
+            - `public-profile-modal.tsx` — Modal con la vista del perfil público de un jugador. (2026-11-07)
+          - `create-mecha/` — ~Directorio de archivos del proyecto.
             - `create-mecha-data.ts` — Datos y opciones que usa el flujo de creación del mecha.
             - `create-mecha-screen.tsx` — Pantalla que coordina los pasos de Crear Mecha.
             - `create-mecha.css` — Estilos específicos del flujo Crear Mecha.
@@ -38,85 +107,84 @@ Generado: 2026-11-13. Fecha entre paréntesis = última modificación en Git. `~
             - `design-step.tsx` — Contenido del paso Diseño del constructor.
             - `mecha-preview.tsx` — Vista previa visual del diseño del mecha.
             - `step-tabs.tsx` — Pestañas o indicadores de los pasos del constructor.
-          - `factory/`
-            - `factory-screen.tsx` — Pantalla Fábrica y presentación de sus servicios.
-          - `hangar/`
-            - `my-mechas/`
-              - `mecha-ficha.css` — Estilos de la ficha de un mecha.
-              - `mecha-ficha.tsx` — Ficha con información y atributos del mecha seleccionado.
-              - `mecha-fixtures.ts` — Datos de prueba de mechas usados por la interfaz.
-              - `mecha-stage.tsx` — Escenario o vista central donde se presenta el mecha.
-              - `mecha-summary.ts` — Funciones para resumir o derivar información de un mecha.
-              - `my-mechas-section.tsx` — Sección del Hangar para recorrer y gestionar Mis Mechas.
-              - `my-mechas.css` — Estilos de la sección Mis Mechas.
-            - `hangar-scene.css` — Estilos de la escena central del Hangar.
-            - `hangar-screen.tsx` — Pantalla principal del Hangar y sus secciones.
-          - `home/`
-            - `home-screen.tsx` — Pantalla principal con los accesos centrales del juego.
-          - `profile/`
-            - `personal-profile-screen.tsx` — Pantalla de perfil personal y edición de sus datos.
+          - `factory/` — ~Directorio de archivos del proyecto.
+            - `factory-screen.tsx` — Pantalla Fábrica y presentación de sus servicios. (2026-11-07)
+          - `hangar/` — ~Directorio de archivos del proyecto.
+            - `my-mechas/` — ~Directorio de archivos del proyecto.
+              - `mecha-ficha.css` — Estilos de la ficha de un mecha. (2026-11-07)
+              - `mecha-ficha.tsx` — Ficha con información y atributos del mecha seleccionado. (2026-11-07)
+              - `mecha-fixtures.ts` — Datos de prueba de mechas usados por la interfaz. (2026-11-07)
+              - `mecha-stage.tsx` — Escenario o vista central donde se presenta el mecha. (2026-11-07)
+              - `mecha-summary.ts` — Funciones para resumir o derivar información de un mecha. (2026-11-10)
+              - `my-mechas-section.tsx` — Sección del Hangar para recorrer y gestionar Mis Mechas. (2026-11-07)
+              - `my-mechas.css` — Estilos de la sección Mis Mechas. (2026-11-07)
+            - `hangar-scene.css` — Estilos de la escena central del Hangar. (2026-11-07)
+            - `hangar-screen.tsx` — Pantalla principal del Hangar y sus secciones. (2026-11-07)
+          - `home/` — ~Directorio de archivos del proyecto.
+            - `home-screen.tsx` — Pantalla principal con los accesos centrales del juego. (2026-11-07)
+          - `profile/` — ~Directorio de archivos del proyecto.
+            - `personal-profile-screen.tsx` — Pantalla de perfil personal y edición de sus datos. (2026-11-07)
         - `styles/` — Fuentes, tokens de diseño y estilos globales.
-          - `fonts.ts` — Declaración y carga de las fuentes tipográficas de la interfaz.
-          - `global.css` — Estilos globales y reglas base de la aplicación.
-          - `tokens.css` — Variables CSS compartidas de diseño, como colores y medidas.
-          - `tokens.ts` — Valores de diseño compartidos disponibles desde TypeScript.
+          - `fonts.ts` — Declaración y carga de las fuentes tipográficas de la interfaz. (2026-11-07)
+          - `global.css` — Estilos globales y reglas base de la aplicación. (2026-11-07)
         - `ui/` — Componentes de interfaz reutilizables.
-          - `brand-logo.tsx` — Componente del logotipo de Rivellon.
-          - `button-link.tsx` — Componente reutilizable de enlace con apariencia de botón.
-          - `button.tsx` — Componente reutilizable de botón.
-          - `card-link.tsx` — Componente de tarjeta que funciona como enlace de navegación.
-          - `icons.tsx` — Componentes de iconos de interfaz.
-          - `modal.tsx` — Estructura reutilizable para ventanas modales.
-          - `notice.css` — Estilos de las notificaciones de interfaz.
-          - `notice.tsx` — Componente de notificación o aviso temporal.
-          - `panel.tsx` — Componente reutilizable de panel.
-          - `placeholder-screen.tsx` — Pantalla provisional para secciones todavía no implementadas.
-          - `screen-header.tsx` — Cabecera compartida de las pantallas.
-          - `screen.css` — Estilos comunes de composición y tamaño de pantalla.
-          - `ui.css` — Estilos compartidos de los componentes de interfaz.
-          - `user-chip.tsx` — Componente compacto de identidad del usuario.
-        - `main.tsx` — Punto de entrada React; monta la aplicación y sus estilos globales.
-      - `index.html` — Documento HTML de entrada servido por Vite para el cliente.
-      - `package.json` — Dependencias, metadatos y scripts npm del cliente web.
-      - `tsconfig.json` — Opciones de compilación y comprobación TypeScript del cliente.
-      - `vite.config.ts` — Configuración de Vite para desarrollo y compilación del cliente.
+          - `brand-logo.tsx` — Componente del logotipo de Rivellon. (2026-11-07)
+          - `button-link.tsx` — Componente reutilizable de enlace con apariencia de botón. (2026-11-07)
+          - `button.tsx` — Componente reutilizable de botón. (2026-11-07)
+          - `card-link.tsx` — Componente de tarjeta que funciona como enlace de navegación. (2026-11-07)
+          - `icons.tsx` — Componentes de iconos de interfaz. (2026-11-07)
+          - `modal.tsx` — Estructura reutilizable para ventanas modales. (2026-11-07)
+          - `notice.css` — Estilos de las notificaciones de interfaz. (2026-11-07)
+          - `notice.tsx` — Componente de notificación o aviso temporal. (2026-11-07)
+          - `panel.tsx` — Componente reutilizable de panel. (2026-11-07)
+          - `placeholder-screen.tsx` — Pantalla provisional para secciones todavía no implementadas. (2026-11-07)
+          - `screen-header.tsx` — Cabecera compartida de las pantallas. (2026-11-07)
+          - `screen.css` — Estilos comunes de composición y tamaño de pantalla. (2026-11-07)
+          - `ui.css` — Estilos compartidos de los componentes de interfaz. (2026-11-07)
+          - `user-chip.tsx` — Componente compacto de identidad del usuario. (2026-11-07)
+        - `main.tsx` — Punto de entrada React; monta la aplicación y sus estilos globales. (2026-11-07)
+      - `index.html` — Documento HTML de entrada servido por Vite para el cliente. (2026-11-07)
+      - `package.json` — Dependencias, metadatos y scripts npm del cliente web. (2026-11-07)
+      - `tsconfig.json` — Opciones de compilación y comprobación TypeScript del cliente. (2026-11-13)
+      - `vite.config.ts` — Configuración de Vite para desarrollo y compilación del cliente. (2026-11-07)
     - `engine/` — Reglas del combate, puras y deterministas (TypeScript, Vitest), y sus pruebas.
       - `src/` — Código fuente del motor de combate.
-        - `combat.ts` — Creación del estado de combate y aplicación de acciones y reglas.
-        - `hex.ts` — Operaciones y utilidades de coordenadas para el tablero hexagonal.
-        - `index.ts` — Exportaciones públicas del paquete de motor.
-        - `rng.ts` — Generador pseudoaleatorio determinista usado por el combate.
-        - `rules.ts` — Constantes provisionales y parámetros de las reglas de combate.
-        - `types.ts` — Tipos compartidos para estados, acciones, eventos y unidades.
+        - `combat.ts` — Creación del estado de combate y aplicación de acciones y reglas. (2026-11-07)
+        - `hex.ts` — Operaciones y utilidades de coordenadas para el tablero hexagonal. (2026-11-07)
+        - `index.ts` — Exportaciones públicas del paquete de motor. (2026-11-07)
+        - `rng.ts` — Generador pseudoaleatorio determinista usado por el combate. (2026-11-07)
+        - `rules.ts` — Constantes provisionales y parámetros de las reglas de combate. (2026-11-07)
+        - `types.ts` — Tipos compartidos para estados, acciones, eventos y unidades. (2026-11-07)
       - `test/` — Pruebas del motor.
-        - `combat.test.ts` — Pruebas unitarias del comportamiento del motor de combate.
-      - `package.json` — Dependencias, metadatos y scripts npm del motor.
-      - `tsconfig.json` — Opciones de TypeScript para compilar y validar el motor.
+        - `combat.test.ts` — Pruebas unitarias del comportamiento del motor de combate. (2026-11-07)
+      - `package.json` — Dependencias, metadatos y scripts npm del motor. (2026-11-07)
+      - `tsconfig.json` — Opciones de TypeScript para compilar y validar el motor. (2026-11-07)
   - `root-files-description/` — Repositorio de esta web (mapa del proyecto); tiene su propio .git.
-    - `.git` — Datos internos de Git de ese repositorio.
     - `build.py` — Genera `MAPA.md` e `index.html` a partir de `mapa.json`.
     - `index.html` — Vista web navegable del mapa de archivos, con filtro y opción de copiar.
     - `mapa.json` — Datos estructurados de rutas, descripciones y agrupaciones usados por el generador.
     - `MAPA.md` — Mapa descriptivo del proyecto generado desde `mapa.json`.
     - `README.md` — Presentación del generador y de los archivos del mapa del proyecto.
+  - `skills/` — ~Recursos auxiliares; no se expande el contenido de archivos comprimidos.
+    - `rivellon-mapa.zip` — ~Archivo comprimido; el mapa enumera el archivo sin expandir su contenido.
   - `tests-e2e/` — Pruebas end-to-end (Playwright): verificación visual de pantallas y de flujo.
     - `stubs/` — Reemplazos simulados usados por el arnés.
-      - `empty.ts` — Módulo vacío usado como sustituto durante la compilación del arnés.
-      - `react-router-dom.tsx` — Sustituto de React Router para aislar las pantallas en el arnés.
-    - `build.mjs` — Prepara y empaqueta el arnés de pruebas end-to-end con sus stubs.
-    - `e2e-pantallas.py` — Prueba sobre el proyecto real con Vite: que ninguna pantalla scrollee y la interacción de Crear Mecha.
-    - `e2e.py` — Prueba end-to-end del flujo usando el arnés con componentes simulados.
-    - `entry.tsx` — Punto de entrada del arnés de pruebas.
-    - `linea-produccion.zip` — ~Copia comprimida de tools/linea-produccion.
+      - `empty.ts` — Módulo vacío usado como sustituto durante la compilación del arnés. (2026-11-07)
+      - `react-router-dom.tsx` — Sustituto de React Router para aislar las pantallas en el arnés. (2026-11-07)
+    - `build.mjs` — Prepara y empaqueta el arnés de pruebas end-to-end con sus stubs. (2026-11-10)
+    - `e2e-pantallas.py` — Prueba pantallas reales del cliente y sus restricciones de viewport e interacción. (2026-11-10)
+    - `e2e.py` — Prueba end-to-end del flujo usando el arnés con componentes simulados. (2026-11-07)
+    - `entry.tsx` — Punto de entrada React del arnés de pruebas. (2026-11-07)
+    - `linea-produccion.zip` — Copia comprimida de tools/linea-produccion.
   - `tools/` — Utilidades y recursos experimentales; no forman parte del núcleo del juego.
     - `demo-combate/` — Demo de combate 2D con las poses del mecha lobo (experimento 1B).
-      - `assets/`
+      - `assets/` — ~Directorio de archivos del proyecto.
         - `hoja_poses_lobo.png` — Hoja de sprites con poses del mecha lobo para la animación.
         - `mecha_lobo.json` — Metadatos de las poses y de su orientación nativa.
         - `mecha_lobo.png` — Imagen del mecha lobo en pose de reposo.
-      - `css/`
+      - `css/` — ~Directorio de archivos del proyecto.
         - `demo.css` — Presentación visual de la demo y sus controles.
-      - `js/`
+      - `js/` — ~Directorio de archivos del proyecto.
         - `animaciones.js` — Animaciones de movimiento, ataque, defensa, daño y derrota.
         - `escena.js` — Dibujo del tablero y de los mechas en el canvas.
         - `main.js` — Inicialización de la demo y conexión de controles y animaciones.
@@ -125,38 +193,137 @@ Generado: 2026-11-13. Fecha entre paréntesis = última modificación en Git. `~
       - `index.html` — Página de entrada de la demo de combate.
       - `README.md` — Instrucciones, flujo y límites de la demo de combate 2D.
     - `ensamblado-2d/` — Scripts Python provisorios del experimento 1B (ensamblado sobre silueta, métricas); no son código del juego.
-      - `__pycache__/` — Bytecode de Python cacheado; no hace falta versionarlo. Archivos: ajustar.cpython-312.pyc, assemble.cpython-312.pyc, colocar.cpython-312.pyc, detectar.cpython-312.pyc, regiones.cpython-312.pyc, seg.cpython-312.pyc
-      - `mecha2/`
-        - `entrada/` — Entradas: hoja de piezas, silueta guía y anclas. Archivos: anclas.json, ensamblado_original_modoB.png, hoja_piezas.png, silueta.png
-        - `piezas/` — Recortes de las piezas y sus metadatos (piezas.json). Archivos: aux.png, head.png, left_arm.png, legs.png, piezas.json, right_arm.png, torso.png
-        - `salida/` — Resultados del ensamblado (out_D, out_DR, ia_resultado), superposiciones y métricas. Archivos: debug_DR.png, ia_resultado.png, ia_resultado_color.png, metricas.json, metricas_C.json, metricas_D.json, metricas_DR.json, metricas_fijos.json, out_D.png, out_DR.png, overlay.png, overlay_D.png
-      - `mecha3/`
-        - `entrada/` — Entradas: hoja de piezas, silueta guía y anclas. Archivos: anclas.json, hoja_piezas.png, silueta.png
-        - `piezas/` — Recortes de las piezas y sus metadatos (piezas.json). Archivos: aux.png, head.png, left_arm.png, legs.png, piezas.json, right_arm.png, torso.png
-        - `salida/` — Resultados del ensamblado (out_D, out_DR, ia_resultado), superposiciones y métricas. Archivos: debug_DR.png, ia_resultado.png, ia_resultado_color.png, metricas.json, metricas_C.json, metricas_D.json, metricas_DR.json, out_D.png, out_DR.png, overlay.png, overlay_D.png
-      - `mecha4/`
-        - `entrada/` — Entradas: hoja de piezas, silueta guía y anclas. Archivos: anclas.json, hoja_piezas.png, silueta.png
-        - `piezas/` — Recortes de las piezas y sus metadatos (piezas.json). Archivos: aux.png, head.png, left_arm.png, legs.png, piezas.json, right_arm.png, torso.png
-        - `salida/` — Resultados del ensamblado (out_D, out_DR, ia_resultado), superposiciones y métricas. Archivos: debug_DR.png, ia_resultado.png, ia_resultado_color.png, metricas.json, metricas_C.json, metricas_D.json, metricas_DR.json, out_DR.png, overlay.png
-      - `mecha5/`
-        - `entrada/` — Entradas: hoja de piezas, silueta guía y anclas. Archivos: anclas.json, hoja_piezas.png, silueta.png
-        - `piezas/` — Recortes de las piezas y sus metadatos (piezas.json). Archivos: aux.png, head.png, left_arm.png, legs.png, piezas.json, right_arm.png, torso.png
-        - `salida/` — Resultados del ensamblado (out_D, out_DR, ia_resultado), superposiciones y métricas. Archivos: debug_DR.png, ia_resultado.png, ia_resultado_color.png, metricas.json, metricas_C.json, metricas_D.json, metricas_DR.json, out_D.png, out_DR.png, overlay.png, overlay_D.png
+      - `__pycache__/` — Bytecode de Python cacheado; no hace falta versionarlo.
+        - `ajustar.cpython-312.pyc` — Bytecode Python cacheado del módulo `ajustar`.
+        - `assemble.cpython-312.pyc` — Bytecode Python cacheado del módulo `assemble`.
+        - `colocar.cpython-312.pyc` — Bytecode Python cacheado del módulo `colocar`.
+        - `detectar.cpython-312.pyc` — Bytecode Python cacheado del módulo `detectar`.
+        - `regiones.cpython-312.pyc` — Bytecode Python cacheado del módulo `regiones`.
+        - `seg.cpython-312.pyc` — Bytecode Python cacheado del módulo `seg`.
+      - `mecha2/` — ~Datos de entrada, piezas y resultados experimentales del mecha2.
+        - `entrada/` — Entradas: hoja de piezas, silueta guía y anclas.
+          - `anclas.json` — Coordenadas y parámetros de anclaje de las piezas para el mecha 2.
+          - `ensamblado_original_modoB.png` — Ensamblado original de referencia del mecha 2, modo B.
+          - `hoja_piezas.png` — Hoja de piezas original que sirve de entrada para el mecha 2.
+          - `silueta.png` — Silueta guía original del mecha 2.
+        - `piezas/` — Recortes de las piezas y sus metadatos (piezas.json).
+          - `aux.png` — Recorte de la pieza auxiliar del mecha 2.
+          - `head.png` — Recorte de la cabeza del mecha 2.
+          - `left_arm.png` — Recorte del brazo izquierdo del mecha 2.
+          - `legs.png` — Recorte de las piernas del mecha 2.
+          - `piezas.json` — Metadatos de dimensiones y anclajes de las piezas del mecha 2.
+          - `right_arm.png` — Recorte del brazo derecho del mecha 2.
+          - `torso.png` — Recorte del torso del mecha 2.
+        - `salida/` — Resultados del ensamblado (out_D, out_DR, ia_resultado), superposiciones y métricas.
+          - `debug_DR.png` — Vista de depuración del recorte DR del mecha 2.
+          - `ia_resultado.png` — Resultado generado por IA para el mecha 2, antes del ajuste de color.
+          - `ia_resultado_color.png` — Resultado de IA del mecha 2 después de ajustar el color.
+          - `metricas.json` — Métricas generales del ensamblado del mecha 2.
+          - `metricas_C.json` — Métricas del ensamblado por regiones, técnica C, del mecha 2.
+          - `metricas_D.json` — Métricas del ensamblado de piezas sin deformación, técnica D, del mecha 2.
+          - `metricas_DR.json` — Métricas del ensamblado con recorte, técnica DR, del mecha 2.
+          - `metricas_fijos.json` — Métricas de referencia del mecha 2 usando parámetros fijos.
+          - `out_D.png` — Resultado visual del ensamblado D del mecha 2.
+          - `out_DR.png` — Resultado visual del ensamblado DR del mecha 2.
+          - `overlay.png` — Superposición de piezas y silueta para el mecha 2.
+          - `overlay_D.png` — Superposición de diagnóstico del ensamblado D del mecha 2.
+      - `mecha3/` — ~Datos de entrada, piezas y resultados experimentales del mecha3.
+        - `entrada/` — Entradas: hoja de piezas, silueta guía y anclas.
+          - `anclas.json` — Coordenadas y parámetros de anclaje de las piezas para el mecha 3.
+          - `hoja_piezas.png` — Hoja de piezas original que sirve de entrada para el mecha 3.
+          - `silueta.png` — Silueta guía original del mecha 3.
+        - `piezas/` — Recortes de las piezas y sus metadatos (piezas.json).
+          - `aux.png` — Recorte de la pieza auxiliar del mecha 3.
+          - `head.png` — Recorte de la cabeza del mecha 3.
+          - `left_arm.png` — Recorte del brazo izquierdo del mecha 3.
+          - `legs.png` — Recorte de las piernas del mecha 3.
+          - `piezas.json` — Metadatos de dimensiones y anclajes de las piezas del mecha 3.
+          - `right_arm.png` — Recorte del brazo derecho del mecha 3.
+          - `torso.png` — Recorte del torso del mecha 3.
+        - `salida/` — Resultados del ensamblado (out_D, out_DR, ia_resultado), superposiciones y métricas.
+          - `debug_DR.png` — Vista de depuración del recorte DR del mecha 3.
+          - `ia_resultado.png` — Resultado generado por IA para el mecha 3, antes del ajuste de color.
+          - `ia_resultado_color.png` — Resultado de IA del mecha 3 después de ajustar el color.
+          - `metricas.json` — Métricas generales del ensamblado del mecha 3.
+          - `metricas_C.json` — Métricas del ensamblado por regiones, técnica C, del mecha 3.
+          - `metricas_D.json` — Métricas del ensamblado de piezas sin deformación, técnica D, del mecha 3.
+          - `metricas_DR.json` — Métricas del ensamblado con recorte, técnica DR, del mecha 3.
+          - `out_D.png` — Resultado visual del ensamblado D del mecha 3.
+          - `out_DR.png` — Resultado visual del ensamblado DR del mecha 3.
+          - `overlay.png` — Superposición de piezas y silueta para el mecha 3.
+          - `overlay_D.png` — Superposición de diagnóstico del ensamblado D del mecha 3.
+      - `mecha4/` — ~Datos de entrada, piezas y resultados experimentales del mecha4.
+        - `entrada/` — Entradas: hoja de piezas, silueta guía y anclas.
+          - `anclas.json` — Coordenadas y parámetros de anclaje de las piezas para el mecha 4.
+          - `hoja_piezas.png` — Hoja de piezas original que sirve de entrada para el mecha 4.
+          - `silueta.png` — Silueta guía original del mecha 4.
+        - `piezas/` — Recortes de las piezas y sus metadatos (piezas.json).
+          - `aux.png` — Recorte de la pieza auxiliar del mecha 4.
+          - `head.png` — Recorte de la cabeza del mecha 4.
+          - `left_arm.png` — Recorte del brazo izquierdo del mecha 4.
+          - `legs.png` — Recorte de las piernas del mecha 4.
+          - `piezas.json` — Metadatos de dimensiones y anclajes de las piezas del mecha 4.
+          - `right_arm.png` — Recorte del brazo derecho del mecha 4.
+          - `torso.png` — Recorte del torso del mecha 4.
+        - `salida/` — Resultados del ensamblado (out_D, out_DR, ia_resultado), superposiciones y métricas.
+          - `debug_DR.png` — Vista de depuración del recorte DR del mecha 4.
+          - `ia_resultado.png` — Resultado generado por IA para el mecha 4, antes del ajuste de color.
+          - `ia_resultado_color.png` — Resultado de IA del mecha 4 después de ajustar el color.
+          - `metricas.json` — Métricas generales del ensamblado del mecha 4.
+          - `metricas_C.json` — Métricas del ensamblado por regiones, técnica C, del mecha 4.
+          - `metricas_D.json` — Métricas del ensamblado de piezas sin deformación, técnica D, del mecha 4.
+          - `metricas_DR.json` — Métricas del ensamblado con recorte, técnica DR, del mecha 4.
+          - `out_DR.png` — Resultado visual del ensamblado DR del mecha 4.
+          - `overlay.png` — Superposición de piezas y silueta para el mecha 4.
+      - `mecha5/` — ~Datos de entrada, piezas y resultados experimentales del mecha5.
+        - `entrada/` — Entradas: hoja de piezas, silueta guía y anclas.
+          - `anclas.json` — Coordenadas y parámetros de anclaje de las piezas para el mecha 5.
+          - `hoja_piezas.png` — Hoja de piezas original que sirve de entrada para el mecha 5.
+          - `silueta.png` — Silueta guía original del mecha 5.
+        - `piezas/` — Recortes de las piezas y sus metadatos (piezas.json).
+          - `aux.png` — Recorte de la pieza auxiliar del mecha 5.
+          - `head.png` — Recorte de la cabeza del mecha 5.
+          - `left_arm.png` — Recorte del brazo izquierdo del mecha 5.
+          - `legs.png` — Recorte de las piernas del mecha 5.
+          - `piezas.json` — Metadatos de dimensiones y anclajes de las piezas del mecha 5.
+          - `right_arm.png` — Recorte del brazo derecho del mecha 5.
+          - `torso.png` — Recorte del torso del mecha 5.
+        - `salida/` — Resultados del ensamblado (out_D, out_DR, ia_resultado), superposiciones y métricas.
+          - `debug_DR.png` — Vista de depuración del recorte DR del mecha 5.
+          - `ia_resultado.png` — Resultado generado por IA para el mecha 5, antes del ajuste de color.
+          - `ia_resultado_color.png` — Resultado de IA del mecha 5 después de ajustar el color.
+          - `metricas.json` — Métricas generales del ensamblado del mecha 5.
+          - `metricas_C.json` — Métricas del ensamblado por regiones, técnica C, del mecha 5.
+          - `metricas_D.json` — Métricas del ensamblado de piezas sin deformación, técnica D, del mecha 5.
+          - `metricas_DR.json` — Métricas del ensamblado con recorte, técnica DR, del mecha 5.
+          - `out_D.png` — Resultado visual del ensamblado D del mecha 5.
+          - `out_DR.png` — Resultado visual del ensamblado DR del mecha 5.
+          - `overlay.png` — Superposición de piezas y silueta para el mecha 5.
+          - `overlay_D.png` — Superposición de diagnóstico del ensamblado D del mecha 5.
       - `ensamblar.py` — Ensamblado experimental por regiones de silueta (técnica C).
       - `exportar.py` — Recorta las piezas de una hoja y exporta sus imágenes y metadatos.
+      - `mecha2.zip` — ~Archivo comprimido; el mapa enumera el archivo sin expandir su contenido.
+      - `mecha3.zip` — ~Archivo comprimido; el mapa enumera el archivo sin expandir su contenido.
+      - `mecha4.zip` — ~Archivo comprimido; el mapa enumera el archivo sin expandir su contenido.
+      - `mecha5.zip` — ~Archivo comprimido; el mapa enumera el archivo sin expandir su contenido.
       - `overlay.py` — Genera una superposición visual para comparar piezas y silueta.
       - `preparar_ia.py` — Prepara imágenes y datos para el paso experimental de IA.
       - `prompt_hoja.txt` — Prompt experimental para generar la hoja de piezas del mecha.
       - `prompt_silueta.txt` — Prompt experimental para generar la silueta guía del mecha.
       - `README.md` — Guía del experimento, scripts disponibles, entradas, resultados y limitaciones.
-    - `linea-produccion/` — Web que ayuda a armar los prompts de la línea de producción de mechas (experimento 1B).
-      - `css/`
+    - `linea-produccion/` — Web que arma los prompts de la línea de producción de mechas y recorta piezas, mecha y poses en el navegador (experimento 1B).
+      - `css/` — ~Directorio de archivos del proyecto.
         - `linea.css` — Estilos de la página de la línea de producción.
-      - `js/`
+      - `js/` — ~Directorio de archivos del proyecto.
+        - `color.js` — Corrector de color y brillo: iguala una imagen con transparencia a la hoja de piezas (Lab, solo píxeles opacos).
         - `main.js` — Lógica principal de la interfaz y del flujo de trabajo.
+        - `panel-recorte.js` — Panel común de los pasos de recorte: elegir una imagen, recortar N sprites, corregir color opcional y descargarlos.
         - `prompts.js` — Carga y composición de las plantillas de prompts.
+        - `recortar.js` — Pasos que recortan el mecha ensamblado (reposo) y la hoja de poses (carga, golpe, guardia, daño, derrotado).
+        - `recorte.js` — Copia del recorte de fondo gris de demo-combate; devuelve cada pieza como imagen con transparencia.
+        - `separar.js` — Paso que separa las seis piezas de la hoja (usa el panel común de recorte).
         - `visor.js` — Utilidades de interfaz y visualización de los pasos.
-      - `prompts/`
+      - `prompts/` — ~Directorio de archivos del proyecto.
         - `prompt_ensamblado.txt` — Plantilla para pedir a ChatGPT que ensamble las piezas del mecha.
         - `prompt_hoja.txt` — Plantilla para generar una hoja con las piezas separadas del mecha.
         - `prompt_pose_unica.txt` — Plantilla para solicitar una pose individual del mecha.
@@ -165,9 +332,7 @@ Generado: 2026-11-13. Fecha entre paréntesis = última modificación en Git. `~
         - `prompt_silueta.txt` — Plantilla experimental para generar una silueta guía.
       - `index.html` — Página de entrada de la línea de producción de mechas.
       - `README.md` — Instrucciones y flujo de la herramienta web experimental de prompts.
-    - `tools.zip` — ~Archivo comprimido de las herramientas.
-  - `.gitignore` — Patrones de archivos y carpetas que Git debe ignorar.
-  - `docs.zip` — Copia comprimida de docs/.
-  - `package-lock.json` — Versiones bloqueadas de las dependencias npm instaladas.
-  - `package.json` — Manifiesto npm raíz; define los workspaces y comandos compartidos.
-  - `README.md` — Presentación del proyecto, estado del motor, pendientes y comandos de desarrollo.
+  - `.gitignore` — Patrones de archivos y carpetas que Git debe ignorar. (2026-11-13)
+  - `package-lock.json` — Versiones bloqueadas de las dependencias npm instaladas. (2026-11-07)
+  - `package.json` — Manifiesto npm raíz; define los workspaces y comandos compartidos. (2026-11-07)
+  - `README.md` — Presentación del proyecto, estado del motor, pendientes y comandos de desarrollo. (2026-11-07)
