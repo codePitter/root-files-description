@@ -93,7 +93,7 @@
     {
      "g": true,
      "p": "PROGRESO_entrada_experimento1b_linea_parte",
-     "d": "Registro de la línea de producción del experimento 1B (partes 1 a 4z6).",
+     "d": "Registro de la línea de producción del experimento 1B (partes 1 a 4z7).",
      "s": [
       "1",
       "2",
@@ -129,7 +129,8 @@
       "4z3",
       "4z4",
       "4z5",
-      "4z6"
+      "4z6",
+      "4z7"
      ],
      "sd": [
       "Implementación inicial de la línea web y sus pasos 0 a 2.",
@@ -166,7 +167,8 @@
       "Variante ajustada del prompt para generar hojas de poses.",
       "Primera tanda para retirar el prompt de silueta e incorporar separación y recorte.",
       "Segunda tanda: paso del navegador que separa las seis piezas de la hoja con fondo transparente.",
-      "Tercera tanda: pasos de navegador para recortar el mecha ensamblado y las poses, y módulo común de recorte."
+      "Tercera tanda: pasos de navegador para recortar el mecha ensamblado y las poses, y módulo común de recorte.",
+      "Corrector de color y brillo de los pasos de recorte, igualado a la hoja de piezas."
      ]
     },
     {
@@ -1186,6 +1188,12 @@
        "dir": true,
        "c": [
         {
+         "n": "color.js",
+         "dir": false,
+         "c": [],
+         "d": "Corrector de color y brillo: iguala una imagen con transparencia a la hoja de piezas (Lab, solo píxeles opacos)."
+        },
+        {
          "n": "main.js",
          "dir": false,
          "c": [],
@@ -1195,7 +1203,7 @@
          "n": "panel-recorte.js",
          "dir": false,
          "c": [],
-         "d": "Panel común de los pasos de recorte: elegir una imagen, recortar N sprites con fondo transparente y descargarlos."
+         "d": "Panel común de los pasos de recorte: elegir una imagen, recortar N sprites, corregir color opcional y descargarlos."
         },
         {
          "n": "prompts.js",
